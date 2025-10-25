@@ -7,11 +7,12 @@
   * sowie Zusatzfunktionen wie clear_stack, duplicate, swap und output_entire_stack.
   *
   */
+  
 #include "stack.h"
 #include "token.h"
 #include "display.h"
-#include "umwandeln.h"
 #include <limits.h>
+#include "umwandeln.h"
 
 /**
  * @brief Führt die im Token  Operation aus.
@@ -19,6 +20,7 @@
  * @param token Token, das den Operator und den Wert enthält.
  * @return Bei bei 0 ist es Erfolg, -1 ist dann  Fehler.
  */
+ 
  
 int rechnen(T_token token){
     int a, b, result;
@@ -119,24 +121,62 @@ int rechnen(T_token token){
             return 0;
 
         case PRT:
-          
-            peek();
+            clearStdout();
+            if (peek(&result) != 0) {
+                setErrMode();
+                printStdout("FEHLER: Stack ist leer.\n");
+                return -1;  
+            }
+            integer_to_string(result);
             return 0;
 
         case PRT_ALL:
-            output_entire_stack();
+        {
+            clearStdout();
+            int *stack;
+            int count;
+            
+            if (output_entire_stack(&stack, &count) != 0) {
+                setNormalMode();
+                printStdout("stack ist leer.\n");
+                return -1;
+            }
+            
+            setNormalMode();
+            for (int i = count - 1; i >= 0; i--) 
+            {
+                integer_to_string(stack[i]);
+            }
             return 0;
+        }
 
         case CLEAR:
             clear_stack();
             return 0;
 
         case DOUBLE:
-            duplicate();
+            clearStdout();
+            if (duplicate() != 0) 
+            {
+                setErrMode();
+                printStdout("FEHLER: Stack underflow beim Duplizieren (min. 1 Element benötigt).\n");
+                return -1;
+            }
+           
+            peek(&result);
+            integer_to_string(result);
             return 0;
 
         case SWAP:
-            swap();
+            clearStdout();
+            if (swap(a, b) != 0) 
+            {
+                setErrMode();
+                printStdout("FEHLER: Stack underflow beim Tauschen (min. 2 Elemente benötigt).\n");
+                return -1;
+            }
+            integer_to_string(a);
+            integer_to_string(b);   
             return 0;
 
         default:

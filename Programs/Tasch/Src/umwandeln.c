@@ -9,6 +9,8 @@
 
 #include "display.h"
 #include <stdbool.h> // Für den booleschen Wert
+#include <stddef.h> // Für NULL
+
 
 
 static char str[12]; 
@@ -19,10 +21,18 @@ static char str[12];
  * @param length Länge des Strings 
  */
 void reverse_string(char str[], int length) {
+    if (str == NULL || length <= 0) return;
+    
+    char tmp[length+1];  // Nutze die gleiche Größe wie str
+    int s = 0;
+    
+   
     for (int t = length - 1; t >= 0; t--) {
-        printToEchoLine(str[t]); // Zeichenweise Ausgabe auf das Display
+        tmp[s++] = str[t];
     }
-}
+    tmp[s] = '\0';
+    printStdout(tmp);
+} 
 
 /**
  * @brief Wandelt eine Ganzzahl in einen String um.
@@ -36,38 +46,48 @@ int integer_to_string(int num) {
     bool negative = false;
     
      // 1. Sonderfall Null
-    if (num == 0) {
+    if (num == 0) 
+    {
         str[i++] = '0';   //Konvertiere die Ziffer
         str[i] = '\0';    //String-Ende
         reverse_string(str, i);
         return 0;
     }   
 
-    // Sonderfall negative Zahlen (optional, aber empfohlen)
-    if (num < 0) {
-        negative = true;
-        num = -num; // Arbeite mit dem positiven Wert
+    // Sonderfall INT_MIN
+    if (num == -2147483648) {
+        printStdout("-2147483648");
+        return 0;
     }
-   
 
-    while (num != 0 ) {
+    // Sonderfall negative Zahlen 
+    if (num < 0) 
+    {
+        negative = true;
+        num = num * (-1); // Arbeite mit dem positiven Wert
+    }
+    // 2. Konvertiere jede Ziffer in den String
+    while (num != 0 ) 
+    {
         int digit = num % 10;
         str[i++] = digit + '0';
-         num = num / 10;  // Entfernt die letzte Ziffer
+        num = num / 10;  // Entfernt die letzte Ziffer
     }
 
     //Füge das Minuszeichen hinzu, falls nötig
-    if (negative) {
-        str[i++] = '-';
+    if (negative) 
+    {
+       str[i++] = '-';
     }
 
     //String-Ende (Null-Terminator)
     str[i] = '\0';
- 
+   
+     printStdout(" \n"); // leer zwischen zahlen
+     
     // String umkehren, da Ziffern in umgekehrter Reihenfolge gespeichert wurden
     reverse_string(str, i);
     return i;
-
 
 }
 

@@ -5,25 +5,19 @@
  * @brief Implementierung eines einfachen Integer-Stacks.
  *
  * Dieses Modul kapselt die Stack-Datenstruktur für Ganzzahlen und bietet 
- * Operationen wie push, pop, peek, clear, duplicate, swap und Ausgabe aller 
- * Elemente. 
+ * Operationen wie push, pop, peek, clear, duplicate, swap.
  */
  
  
 #include "stack.h"
 #include "display.h"
-#include "umwandeln.h"
 
 
-/** @brief Maximale Stack-Größe */
 #define SIZE 10
 
 static int stack[SIZE];
 static int top = -1; 
 
-// ------------------------------------------------------------
-// Hilfsfunktionen
-// ------------------------------------------------------------
 
 /**
  * @brief Prüft, ob der Stack voll ist.
@@ -52,15 +46,15 @@ int isEmpty(void)
 int push(int data) 
 {
     if (isFull()) 
+    {
         return -1;
-
+    }
     stack[++top] = data; 
     return 0;
 }
 
 /**
  * @brief Entfernt das oberste Element des Stacks.
- *
  * @param data ist das wert was wir von stack holen
  * @return int 0 bei Erfolg, -1 bei Stack Underflow.
  */
@@ -68,26 +62,26 @@ int push(int data)
 int pop(int *data) 
 {
     if (isEmpty()) 
+    {
         return -1; 
-
+    }
     *data = stack[top--]; 
     return 0;
 }
 
 /**
  * @brief Gibt das oberste Element aus, ohne es zu entfernen.
- * Die Ausgabe erfolgt über das Display.
+ *@param data ist das wert was auf dem oberste von stack ist
+ * @return int 0 bei Erfolg, -1 wenn der Stack leer ist.
  */
 
-void peek(void) 
+int peek(int *data) 
 {
     if (isEmpty()) {
-        printStdout("FEHLER: Stack ist leer.\n");
-        return;
+        return -1;
     }
-
-    int data = stack[top]; 
-    integer_to_string(data); 
+     *data = stack[top]; 
+    return 0;
 }
 
 /**
@@ -96,60 +90,62 @@ void peek(void)
 void clear_stack(void) 
 {
     if (isEmpty()) {
+        setNormalMode();
         printStdout("Stack ist bereits leer.\n");
         return;
     }
     top = -1;
+    clearStdout();
 }
 
 /**
  * @brief Dupliziert das oberste Element des Stacks.
+ * @return int 0 bei Erfolg, -1 bei Stack Overflow oder wenn der Stack leer ist.
  */
-void duplicate(void) 
+int duplicate(void) 
 {
     if (isEmpty()) {
-        printStdout("FEHLER: Stack ist leer, kann nicht duplizieren.\n");
-        return;
+        return -1;
     }
-
     int v = stack[top];
     push(v);
-    integer_to_string(v); 
-
+    return 0;
 }
 
 /**
  * @brief Vertauscht die beiden obersten Elemente des Stacks.
+ * @return int 0 bei Erfolg, -1 wenn der Stack weniger als zwei Elemente hat.    
+ *@param valA ist das oberste wert von stack
+ *@param valB ist das zweit oberste wert von stack
  */
-void swap(void) 
+int swap(int valA, int valB) 
 {
-    if (top < 1) {
-        printStdout("FEHLER: Für das Tauschen werden mindestens zwei Elemente benötigt.\n");
-        return;
+    if (top < 1) 
+    {
+        return -1;
     }
-
-    int valA = stack[top]; 
-    int valB = stack[top - 1]; 
+    valA = stack[top]; 
+    valB = stack[top - 1]; 
 
     stack[top] = valB;
     stack[top - 1] = valA;
-    integer_to_string(valA);
-    integer_to_string(valB);
+    return 0;
 }
 
 /**
  * @brief Gibt den gesamten Inhalt des Stacks auf dem Display aus.
  * 
- * Die Ausgabe erfolgt vom obersten bis zum untersten Element.
+ * @param stack_data Zeiger auf ein Array, das die Stack-Daten enthält.
+ * @param stack_size Zeiger auf eine Variable, die die Größe des Stacks enthält.
+ * @return int 0 bei Erfolg, -1 wenn der Stack leer ist.
  */
-void output_entire_stack(void)
+int output_entire_stack(int **stack_data, int *stack_size)
 {
     if (isEmpty()) {
-        printStdout("Stack ist leer.\n");
-        return;
-    }
 
-    for (int i = top; i >= 0; i--) {
-        integer_to_string(stack[i]);
+        return -1;
     }
+    *stack_data = stack;
+    *stack_size = top + 1;
+    return 0;
 }
