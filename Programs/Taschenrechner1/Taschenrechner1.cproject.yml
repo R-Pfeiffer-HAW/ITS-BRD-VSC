@@ -168,6 +168,7 @@ project:
         - file: ../../ITS_BRD_LIB/Src/USART_STM32F4xx.c
         - file: ../../ITS_BRD_LIB/Src/stdinout_USART.c
 
+
     # Header-Dateien für das Programm
     - group: Program/User/Inc
       files:
@@ -178,6 +179,10 @@ project:
     - group: Program/User/Src
       files:
         - file: Src/main.c
+        - file: Src/rechnen.c
+        - file: Src/stack.c
+        - file: Src/scanner.c
+        - file: Src/display.c
 
 
   components:

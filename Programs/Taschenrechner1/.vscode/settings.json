@@ -1,0 +1,6 @@
+{
+    "debug.hideSlowPreLaunchWarning": true,
+    "clangd.arguments": [
+        "--compile-commands-dir=/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1/out/Taschenrechner1/ITSboard/Debug"
+    ]
+}

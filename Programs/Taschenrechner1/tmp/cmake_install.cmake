@@ -1,4 +1,4 @@
-# Install script for directory: /Users/esmatrabaki/ITS-BRD-VSC/Programs/Taschenrechner1/tmp
+# Install script for directory: /Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1/tmp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

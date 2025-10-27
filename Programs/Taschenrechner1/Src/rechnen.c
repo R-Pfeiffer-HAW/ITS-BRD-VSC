@@ -8,6 +8,8 @@
 #include "token.h"
 #include "display.h"
 #include <limits.h>
+#include <stdio.h>
+
 
 int rechnen(T_token token)
 {
@@ -23,79 +25,119 @@ int rechnen(T_token token)
             }
             return 0;
 
-        case PLUS:
-            if (pop(&a) == -1 || pop(&b) == -1) {
+        case PLUS: {
+            int ra, rb;
+            ra = pop(&a);
+            rb = (ra == 0) ? pop(&b) : -1;
+            if (ra == -1 || rb == -1) {
+                if (ra == 0) (void)push(a);
                 setErrMode();
                 printStdout("FEHLER: Stack underflow.\n");
-                return -1; // Fehler beim Poppen
+                return -1;
             }
-
-            //overflow prüfen
+            // Overflow-Check Addition
             if ((a > 0 && b > INT_MAX - a) || (a < 0 && b < INT_MIN - a)) {
                 setErrMode();
                 printStdout("FEHLER: Integer Overflow bei Addition.\n");
-                return -1; // Overflow Fehler
+                (void)push(b); (void)push(a); // Zustand wiederherstellen optional
+                return -1;
             }
             result = b + a;
-            push(result);
+            if (push(result) == -1) {
+                setErrMode();
+                printStdout("FEHLER: Stack overflow.\n");
+                return -1;
+            }
             return 0;
+        }
+            
             
 
-        case MINUS:
-        if (pop(&a) == -1 || pop(&b) == -1) {
-            setErrMode();
-            printStdout("FEHLER: Stack underflow.\n");
-            return -1; // Fehler beim Poppen
+        case MINUS: {
+            int ra, rb;
+            ra = pop(&a);
+            rb = (ra == 0) ? pop(&b) : -1;
+            if (ra == -1 || rb == -1) {
+                if (ra == 0) (void)push(a);
+                setErrMode();
+                printStdout("FEHLER: Stack underflow.\n");
+                return -1;
+            }
+            // Overflow-Check Subtraktion: b - a
+            if ((a > 0 && b < INT_MIN + a) || (a < 0 && b > INT_MAX + a)) {
+                setErrMode();
+                printStdout("FEHLER: Integer Overflow bei Subtraktion.\n");
+                (void)push(b); (void)push(a);
+                return -1;
+            }
+            result = b - a;
+            if (push(result) == -1) {
+                setErrMode();
+                printStdout("FEHLER: Stack overflow.\n");
+                return -1;
+            }
+            return 0;
         }
-
-        //overflow prüfen
-        if ((a < 0 && b > INT_MAX + a) || (a > 0 && b < INT_MIN + a)) {
-            setErrMode();
-            printStdout("FEHLER: Integer Overflow bei Addition.\n");
-            return -1; // Overflow Fehler
-        }
-        result = b - a;
-        push(result);
-        return 0;
         
 
-        case MULT:
-            if (pop(&a) == -1 || pop(&b) == -1) {
+        case MULT: {
+            int ra, rb;
+            ra = pop(&a);
+            rb = (ra == 0) ? pop(&b) : -1;
+            if (ra == -1 || rb == -1) {
+                if (ra == 0) (void)push(a);
                 setErrMode();
                 printStdout("FEHLER: Stack underflow.\n");
-                return -1; // Fehler beim Poppen
+                return -1;
             }
             result = b * a;
-            push(result);
+            if (push(result) == -1) {
+                setErrMode();
+                printStdout("FEHLER: Stack overflow.\n");
+                return -1;
+            }
             return 0;
+        }
 
 
-        case DIV:
-            if (pop(&a) == -1 || pop(&b) == -1) {
+        case DIV: {
+            int ra, rb;
+            ra = pop(&a);
+            rb = (ra == 0) ? pop(&b) : -1;
+            if (ra == -1 || rb == -1) {
+                if (ra == 0) (void)push(a);
                 setErrMode();
                 printStdout("FEHLER: Stack underflow.\n");
-                return -1; // Fehler beim Poppen
-            } 
-            else if (a == 0) {
+                return -1;
+            }
+            if (a == 0) {
                 setErrMode();
                 printStdout("FEHLER: Division durch Null.\n");
-                return -1; // Division durch Null Fehler
+                (void)push(b); (void)push(a);
+                return -1;
             }
-            else {
-                result = b / a;
-                push(result);
-                return 0;
+            result = b / a;
+            if (push(result) == -1) {
+                setErrMode();
+                printStdout("FEHLER: Stack overflow.\n");
+                return -1;
             }
+            return 0;
+        }
 
-        case PRT:
-            pop( &a);
+        case PRT: {
+            if (pop(&a) == -1) {
+                setErrMode();
+                printStdout("FEHLER: Stack ist leer.\n");
+                return -1;
+            }
             printStdout("Top of Stack: ");
             char buffer[12];
             sprintf(buffer, "%d\n", a);
             printStdout(buffer);
-            push(a); // Wert wieder auf den Stack legen
+            (void)push(a); // zurücklegen
             return 0;
-
+        }
 
         case CLEAR:
             clear_stack();

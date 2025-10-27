@@ -329,6 +329,14 @@ build:
       files:
         - file: ../../../../Src/main.c
           category: sourceC
+        - file: ../../../../Src/rechnen.c
+          category: sourceC
+        - file: ../../../../Src/stack.c
+          category: sourceC
+        - file: ../../../../Src/scanner.c
+          category: sourceC
+        - file: ../../../../Src/display.c
+          category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h
       category: header

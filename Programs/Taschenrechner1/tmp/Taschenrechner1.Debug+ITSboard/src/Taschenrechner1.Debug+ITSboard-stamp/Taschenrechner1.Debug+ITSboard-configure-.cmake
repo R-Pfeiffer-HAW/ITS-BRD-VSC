@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake;-G;Ninja;-S;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard;-B;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/1;-DSOLUTION_ROOT=/Users/esmatrabaki/ITS-BRD-VSC/Programs/Taschenrechner1;-DCMSIS_PACK_ROOT=/Users/esmatrabaki/.cache/arm/packs;-DCMSIS_COMPILER_ROOT=/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.11.0/etc")
+set(command "/Users/raphaelpfeiffer/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake;-G;Ninja;-S;/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard;-B;/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/1;-DSOLUTION_ROOT=/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1;-DCMSIS_PACK_ROOT=/Users/raphaelpfeiffer/.cache/arm/packs;-DCMSIS_COMPILER_ROOT=/Users/raphaelpfeiffer/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.11.0/etc")
 set(log_merged "")
 set(log_output_on_failure "ON")
-set(stdout_log "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard/src/Taschenrechner1.Debug+ITSboard-stamp/Taschenrechner1.Debug+ITSboard-configure-out.log")
-set(stderr_log "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard/src/Taschenrechner1.Debug+ITSboard-stamp/Taschenrechner1.Debug+ITSboard-configure-err.log")
+set(stdout_log "/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard/src/Taschenrechner1.Debug+ITSboard-stamp/Taschenrechner1.Debug+ITSboard-configure-out.log")
+set(stderr_log "/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard/src/Taschenrechner1.Debug+ITSboard-stamp/Taschenrechner1.Debug+ITSboard-configure-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  /Users/esmatrabaki/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard/src/Taschenrechner1.Debug+ITSboard-stamp/Taschenrechner1.Debug+ITSboard-configure-*.log")
+    set(msg "${msg}\nSee also\n  /Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard/src/Taschenrechner1.Debug+ITSboard-stamp/Taschenrechner1.Debug+ITSboard-configure-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Ninja" MATCHES "Ninja")
-    set(msg "Taschenrechner1.Debug+ITSboard configure command succeeded.  See also /Users/esmatrabaki/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard/src/Taschenrechner1.Debug+ITSboard-stamp/Taschenrechner1.Debug+ITSboard-configure-*.log")
+    set(msg "Taschenrechner1.Debug+ITSboard configure command succeeded.  See also /Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/Taschenrechner1/tmp/Taschenrechner1.Debug+ITSboard/src/Taschenrechner1.Debug+ITSboard-stamp/Taschenrechner1.Debug+ITSboard-configure-*.log")
     message(STATUS "${msg}")
   endif()
 endif()

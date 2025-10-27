@@ -1,18 +1,25 @@
 #include "stack.h"
 #include "display.h"
 
-// 1. Definition der Stack-Größe
-#define SIZE 10
+static int s_data[STACK_SIZE];
+static int s_top; // Index des obersten Elements, -1 == leer
 
-int stack[SIZE];
-int top = -1;
+void stack_init(void) {
+    s_top = -1;
+    // optional: Array nullen
+    //for (int i = 0; i < STACK_SIZE; ++i) s_data[i] = 0;
+}
+
+#define SIZE   STACK_SIZE
+#define stack  s_data
+#define top    s_top
 
 
 
 // Prüft, ob der Stack voll ist
 int isFull(void) 
 { 
-    return top == SIZE ; 
+    return top >= SIZE -1; 
 }
 
 // Prüft, ob der Stack leer ist
@@ -33,6 +40,7 @@ int push(int data)
     return -1;
   }
   stack[top++] = data; // Element speichern
+  return 0;
 }
 
 
@@ -50,7 +58,8 @@ int pop(int *data)
     return -1; // Fehlerwert
   }
 
-   *data = stack[top--]; // Wert des obersten Elements speichern
+  if (data) *data = stack[top--]; // Wert lesen, dann Top dekrementieren
+  else      top--; // Nur Top dekrementieren, Wert wird verworfen
   return 0;
 }
 
@@ -59,13 +68,15 @@ int pop(int *data)
  * Gibt das oberste Element zurück, ohne es zu entfernen (Peek).
  * Gibt -1 oder einen definierten Fehlerwert bei leerem Stack zurück.
  */
-int peek(int *data) {
-    if (isEmpty()) {
+int peek(int *data) 
+{
+    if (isEmpty()) 
+    {
         printStdout("FEHLER: Stack ist leer.\n");
         return -1; // Fehlerwert
     }
-   *data = stack[top]; // Wert des obersten Elements speichern
-  return 0;
+    if (data) *data = stack[top]; // Wert des obersten Elements speichern
+    return 0;
 }
 
 void clear_stack(void) {
@@ -90,13 +101,9 @@ void duplicate(void) {
         printStdout("FEHLER: Stack ist leer, kann nicht duplizieren.\n");
         return;
     }
-
-    // 1. Wert abrufen 
-    int duplicate = stack[top]; 
-    
-    // 3. Wert noch einmal pushen (top wird inkrementiert und der Wert gespeichert)
-    push(duplicate); 
-    printStdout("Oberster Wert %d dupliziert.\n" );
+    int v = stack[top];
+    (void)push(v);
+    printStdout("Oberster Wert dupliziert.\n");
 }
 
 void swap(void) 
