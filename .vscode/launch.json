@@ -5,8 +5,8 @@
             "name": "STLink@pyOCD (launch)",
             "type": "gdbtarget",
             "request": "launch",
-            "cwd": "${workspaceFolder}/Programs/Taschenrechner1",
-            "program": "out/Taschenrechner1/ITSboard/Debug/Taschenrechner1.axf",
+            "cwd": "${workspaceFolder}/Programs/Tasch",
+            "program": "out/Tasch/ITSboard/Debug/Tasch.axf",
             "gdb": "arm-none-eabi-gdb",
             "preLaunchTask": "CMSIS Load",
             "initCommands": [
@@ -43,8 +43,8 @@
             "name": "STLink@pyOCD (attach)",
             "type": "gdbtarget",
             "request": "attach",
-            "cwd": "${workspaceFolder}/Programs/Taschenrechner1",
-            "program": "out/Taschenrechner1/ITSboard/Debug/Taschenrechner1.axf",
+            "cwd": "${workspaceFolder}/Programs/Tasch",
+            "program": "out/Tasch/ITSboard/Debug/Tasch.axf",
             "gdb": "arm-none-eabi-gdb",
             "initCommands": [
                 ""
