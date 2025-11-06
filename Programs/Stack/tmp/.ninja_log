@@ -1,0 +1,13 @@
+# ninja log v6
+0	19	1762473264609817420	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir	a6df697e33c8d22b
+0	19	1762473264609817420	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir	a6df697e33c8d22b
+19	36	1762473264627706017	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-download	2aebdbb6198d893
+19	36	1762473264627706017	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-download	2aebdbb6198d893
+36	53	1762473264644002154	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-update	d89465d6d78e0765
+36	53	1762473264644002154	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-update	d89465d6d78e0765
+53	69	1762473264660620959	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-patch	351704333e3934be
+53	69	1762473264660620959	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-patch	351704333e3934be
+69	1005	1762473265595971512	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure	ab15f48d23b1dd5d
+69	1005	1762473265595971512	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure	ab15f48d23b1dd5d
+1005	1042	1762473265596619637	Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	159df853fca71d4f
+1005	1042	1762473265596619637	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database	159df853fca71d4f

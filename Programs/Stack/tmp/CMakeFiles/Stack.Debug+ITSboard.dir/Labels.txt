@@ -1,0 +1,16 @@
+# Target labels
+ Stack.Debug+ITSboard
+# Source files and their labels
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/CMakeFiles/Stack.Debug+ITSboard
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/CMakeFiles/Stack.Debug+ITSboard.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/CMakeFiles/Stack.Debug+ITSboard-complete.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-build.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-database.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-download.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-executes.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-install.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-mkdir.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-patch.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-test.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-update.rule
