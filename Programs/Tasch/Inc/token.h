@@ -2,7 +2,7 @@
   * @file token.h
   * @author Franz Korf, HAW Hamburg 
   * @date Mar 2016
-  * @brief This file stores all token returned by the scanner. 
+  * @brief This file stores all.  token returned by the scanner. 
   */
 
 #ifndef TOKEN_H

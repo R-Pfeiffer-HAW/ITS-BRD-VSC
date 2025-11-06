@@ -3,7 +3,7 @@
  * @author Franz Korf, HAW Hamburg 
  * @date Mar 2016
  * 
- * @brief This module implements a simple scanner for keypad input.
+ * @brief This modul implements a simple scanner for keypad input.
  */
  
 #include "scanner.h"

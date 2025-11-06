@@ -1,6 +1,6 @@
 /**
  * @file umwandeln.h
- * @brief Header-Datei für Funktionen zur Umwandlung von Ganzzahlen in Strings und deren Display-Ausgabe.
+ * @brief Header-Datei für   Funktionen zur Umwandlung von Ganzzahlen in Strings und deren Display-Ausgabe.
  *
  *
  * @date Oktober 2025

@@ -6,7 +6,7 @@
  * Es unterstützt grundlegende Operationen wie push, pop, peek, 
  * sowie Zusatzfunktionen wie clear_stack, duplicate, swap und output_entire_stack.
  *
- * @date Okt 2025
+ * @date Okt  2025
  * @authors Esmat Rabaki und Raphael Pfeiffer  
  */
 

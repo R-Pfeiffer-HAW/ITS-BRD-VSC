@@ -3,7 +3,7 @@
  * @author 
  * Esmat Rabaki, Raphael Pfeiffer, HAW Hamburg
  * @date Okt 2025
- * @brief Header-Datei für Rechenoperationen auf Basis von Tokens und Stack.
+ * @brief Header-Datei  für Rechenoperationen auf Basis von Tokens und Stack.
  */
 
 #ifndef RECHNEN_H

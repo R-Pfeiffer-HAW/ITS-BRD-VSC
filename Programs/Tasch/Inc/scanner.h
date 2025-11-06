@@ -2,7 +2,7 @@
   * @file scanner.h
   * @author Franz Korf, HAW Hamburg 
   * @date Mar 2016
-  * @brief Header file of input module. 
+  * @brief Header file o f input module. 
   */
 
 #ifndef SCANNER_H

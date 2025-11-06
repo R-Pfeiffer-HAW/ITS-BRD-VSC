@@ -4,7 +4,7 @@
  * @brief Enthält Funktionen zur Umwandlung von Integer-Werten
  * in Strings und deren Anzeige auf dem Display.
  *
- * @date Okt 2025
+ * @date Okt  2025
  */
 
 #include "display.h"

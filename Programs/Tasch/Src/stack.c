@@ -5,7 +5,7 @@
  * @brief Implementierung eines einfachen Integer-Stacks.
  *
  * Dieses Modul kapselt die Stack-Datenstruktur für Ganzzahlen und bietet 
- * Operationen wie push, pop, peek, clear, duplicate, swap.
+ * Operationen wie push pop, peek, clear, duplicate, swap.
  */
  
  

@@ -2,7 +2,7 @@
   * @file display.h
   * @author Franz Korf, HAW Hamburg 
   * @date Mar 2016
-  * @brief Header file of display module. 
+  * @brief Header file of display module.. 
   */
 
 #ifndef DISPLAY_H

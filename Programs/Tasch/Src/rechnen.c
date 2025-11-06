@@ -4,7 +4,7 @@
   * @date Okt 2025
   * @brief Dieses Modul stellt eine einfache Stack-Verwaltung für Ganzzahlen bereit.
   * Es unterstützt grundlegende Operationen wie push, pop, peek, 
-  * sowie Zusatzfunktionen wie clear_stack, duplicate, swap und output_entire_stack.
+  * sowie zusatzfunktionen wie clear_stack, duplicate, swap und output_entire_stack.
   *
   */
   
