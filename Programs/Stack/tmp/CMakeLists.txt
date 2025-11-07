@@ -1,40 +1,24 @@
 cmake_minimum_required(VERSION 3.27)
 include(ExternalProject)
 	
-<<<<<<<< HEAD:Programs/Stack/tmp/CMakeLists.txt
 project("Stack" NONE)
-========
-project("Tasch" NONE)
->>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/CMakeLists.txt
 
 # Roots
 include("roots.cmake")
 
 # Context specific lists
 set(CONTEXTS
-<<<<<<<< HEAD:Programs/Stack/tmp/CMakeLists.txt
   "Stack.Debug+ITSboard"
-========
-  "Tasch.Debug+ITSboard"
->>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/CMakeLists.txt
 )
 list(LENGTH CONTEXTS CONTEXTS_LENGTH)
 math(EXPR CONTEXTS_LENGTH "${CONTEXTS_LENGTH}-1")
 
 set(DIRS
-<<<<<<<< HEAD:Programs/Stack/tmp/CMakeLists.txt
   "${CMAKE_CURRENT_SOURCE_DIR}/Stack.Debug+ITSboard"
 )
 
 set(OUTPUTS_1
   "${SOLUTION_ROOT}/out/Stack/ITSboard/Debug/Stack.axf"
-========
-  "${CMAKE_CURRENT_SOURCE_DIR}/Tasch.Debug+ITSboard"
-)
-
-set(OUTPUTS_1
-  "${SOLUTION_ROOT}/out/Tasch/ITSboard/Debug/Tasch.axf"
->>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/CMakeLists.txt
 )
 
 set(ARGS

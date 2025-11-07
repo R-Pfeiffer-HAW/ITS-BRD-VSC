@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/CMakeFiles/Tasch.Debug+ITSboard-build"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/CMakeFiles/Tasch.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-update.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Tasch.Debug+ITSboard"
+		],
+		"name" : "Tasch.Debug+ITSboard-build"
+	}
+}

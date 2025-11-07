@@ -262,17 +262,9 @@ target_link_libraries(Group_Program_Arch_Inc_ABSTRACTIONS INTERFACE
 # group Program/User/Src
 add_library(Group_Program_User_Src OBJECT
   "${SOLUTION_ROOT}/Src/main.c"
-<<<<<<<< HEAD:Programs/Stack/tmp/Stack.Debug+ITSboard/groups.cmake
   "${SOLUTION_ROOT}/Src/led.c"
   "${SOLUTION_ROOT}/Src/lwip_interface.c"
   "${SOLUTION_ROOT}/Src/arch/sys_arch.c"
-========
-  "${SOLUTION_ROOT}/Src/display.c"
-  "${SOLUTION_ROOT}/Src/scanner.c"
-  "${SOLUTION_ROOT}/Src/rechnen.c"
-  "${SOLUTION_ROOT}/Src/stack.c"
-  "${SOLUTION_ROOT}/Src/umwandeln.c"
->>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/Tasch.Debug+ITSboard/groups.cmake
 )
 target_include_directories(Group_Program_User_Src PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>

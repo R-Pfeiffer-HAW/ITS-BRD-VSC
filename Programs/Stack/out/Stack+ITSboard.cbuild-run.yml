@@ -1,11 +1,6 @@
 cbuild-run:
-<<<<<<<< HEAD:Programs/Stack/out/Stack+ITSboard.cbuild-run.yml
   generated-by: csolution version 2.12.0
   solution: ../Stack.csolution.yml
-========
-  generated-by: csolution version 2.11.0
-  solution: ../Tasch.csolution.yml
->>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/out/Tasch+ITSboard.cbuild-run.yml
   target-type: ITSboard
   compiler: AC6
   board: STMicroelectronics::NUCLEO-F429ZI:Rev.B
@@ -13,13 +8,8 @@ cbuild-run:
   device: STMicroelectronics::STM32F429ZITx
   device-pack: Keil::STM32F4xx_DFP@2.17.1
   output:
-<<<<<<<< HEAD:Programs/Stack/out/Stack+ITSboard.cbuild-run.yml
     - file: Stack/ITSboard/Debug/Stack.axf
       info: generate by Stack.Debug+ITSboard
-========
-    - file: Tasch/ITSboard/Debug/Tasch.axf
-      info: generate by Tasch.Debug+ITSboard
->>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/out/Tasch+ITSboard.cbuild-run.yml
       type: elf
       load: image+symbols
   system-resources:
@@ -46,11 +36,7 @@ cbuild-run:
     name: ST-Link@pyOCD
     protocol: swd
     clock: 10000000
-<<<<<<<< HEAD:Programs/Stack/out/Stack+ITSboard.cbuild-run.yml
     dbgconf: ../.cmsis/Stack+ITSboard.dbgconf
-========
-    dbgconf: ../.cmsis/Tasch+ITSboard.dbgconf
->>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/out/Tasch+ITSboard.cbuild-run.yml
     gdbserver:
       - port: 3333
   debug-vars:
