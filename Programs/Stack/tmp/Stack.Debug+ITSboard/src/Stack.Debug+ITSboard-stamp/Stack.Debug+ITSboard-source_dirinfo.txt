@@ -4,6 +4,10 @@
 
 method=source_dir
 command=
+<<<<<<<< HEAD:Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-source_dirinfo.txt
 source_dir=/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard
+========
+source_dir=/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-source_dirinfo.txt
 work_dir=
 

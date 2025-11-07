@@ -1,11 +1,19 @@
 
 cmake_minimum_required(VERSION 3.15)
 
+<<<<<<<< HEAD:Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-.cmake
 set(command "/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake;-G;Ninja;-S;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard;-B;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/1;-DSOLUTION_ROOT=/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack;-DCMSIS_PACK_ROOT=/Users/esmatrabaki/.cache/arm/packs;-DCMSIS_COMPILER_ROOT=/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.12.0/etc")
 set(log_merged "")
 set(log_output_on_failure "ON")
 set(stdout_log "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-out.log")
 set(stderr_log "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-err.log")
+========
+set(command "/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake;-G;Ninja;-S;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard;-B;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/1;-DSOLUTION_ROOT=/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch;-DCMSIS_PACK_ROOT=/Users/esmatrabaki/.cache/arm/packs;-DCMSIS_COMPILER_ROOT=/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.11.0/etc")
+set(log_merged "")
+set(log_output_on_failure "ON")
+set(stdout_log "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure-out.log")
+set(stderr_log "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure-err.log")
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure-.cmake
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +39,11 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
+<<<<<<<< HEAD:Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-.cmake
     set(msg "${msg}\nSee also\n  /Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-*.log")
+========
+    set(msg "${msg}\nSee also\n  /Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure-*.log")
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure-.cmake
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +62,11 @@ if(result)
   endif()
 else()
   if(NOT "Ninja" MATCHES "Ninja")
+<<<<<<<< HEAD:Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-.cmake
     set(msg "Stack.Debug+ITSboard configure command succeeded.  See also /Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/Stack.Debug+ITSboard/src/Stack.Debug+ITSboard-stamp/Stack.Debug+ITSboard-configure-*.log")
+========
+    set(msg "Tasch.Debug+ITSboard configure command succeeded.  See also /Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure-*.log")
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure-.cmake
     message(STATUS "${msg}")
   endif()
 endif()

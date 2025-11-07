@@ -3,11 +3,19 @@ cmake_minimum_required(VERSION 3.27)
 # Roots
 include("../roots.cmake")
 
+<<<<<<<< HEAD:Programs/Stack/tmp/Stack.Debug+ITSboard/CMakeLists.txt
 set(CONTEXT Stack.Debug+ITSboard)
 set(TARGET ${CONTEXT})
 set(OUT_DIR "${SOLUTION_ROOT}/out/Stack/ITSboard/Debug")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(LD_SCRIPT "${SOLUTION_ROOT}/Stack_ITSboard.sct")
+========
+set(CONTEXT Tasch.Debug+ITSboard)
+set(TARGET ${CONTEXT})
+set(OUT_DIR "${SOLUTION_ROOT}/out/Tasch/ITSboard/Debug")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(LD_SCRIPT "${SOLUTION_ROOT}/Tasch_ITSboard.sct")
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/Tasch.Debug+ITSboard/CMakeLists.txt
 set(LD_SCRIPT_PP ${LD_SCRIPT})
 
 # Processor Options
@@ -30,7 +38,11 @@ set(CMAKE_C_STANDARD_INCLUDE_DIRECTORIES ${CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES}
 
 # Setup context
 add_executable(${CONTEXT})
+<<<<<<<< HEAD:Programs/Stack/tmp/Stack.Debug+ITSboard/CMakeLists.txt
 set_target_properties(${CONTEXT} PROPERTIES PREFIX "" SUFFIX ".axf" OUTPUT_NAME "Stack")
+========
+set_target_properties(${CONTEXT} PROPERTIES PREFIX "" SUFFIX ".axf" OUTPUT_NAME "Tasch")
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/Tasch.Debug+ITSboard/CMakeLists.txt
 set_target_properties(${CONTEXT} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${OUT_DIR})
 add_library(${CONTEXT}_GLOBAL INTERFACE)
 

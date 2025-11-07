@@ -6,7 +6,11 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
+<<<<<<<< HEAD:Programs/Stack/tmp/CMakeFiles/rules.ninja
 # Project: Stack
+========
+# Project: Tasch
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/CMakeFiles/rules.ninja
 # Configurations: 
 # =============================================================================
 # =============================================================================
@@ -23,7 +27,11 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
+<<<<<<<< HEAD:Programs/Stack/tmp/CMakeFiles/rules.ninja
   command = /Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake --regenerate-during-build -S/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp -B/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp
+========
+  command = /Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake --regenerate-during-build -S/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp -B/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/CMakeFiles/rules.ninja
   description = Re-running CMake...
   generator = 1
 

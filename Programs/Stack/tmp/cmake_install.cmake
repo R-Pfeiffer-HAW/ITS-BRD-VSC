@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:Programs/Stack/tmp/cmake_install.cmake
 # Install script for directory: /Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp
+========
+# Install script for directory: /Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/cmake_install.cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +44,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<<< HEAD:Programs/Stack/tmp/cmake_install.cmake
 file(WRITE "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Stack/tmp/${CMAKE_INSTALL_MANIFEST}"
+========
+file(WRITE "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62:Programs/Tasch/tmp/cmake_install.cmake
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

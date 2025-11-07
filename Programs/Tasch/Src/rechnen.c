@@ -7,12 +7,20 @@
   * sowie Zusatzfunktionen wie clear_stack, duplicate, swap und output_entire_stack.
   *
   */
+<<<<<<< HEAD
   
 #include "stack.h"
 #include "token.h"
 #include "display.h"
 #include <limits.h>
 #include "umwandeln.h"
+=======
+#include "stack.h"
+#include "token.h"
+#include "display.h"
+#include "umwandeln.h"
+#include <limits.h>
+>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62
 
 /**
  * @brief Führt die im Token  Operation aus.
@@ -21,7 +29,10 @@
  * @return Bei bei 0 ist es Erfolg, -1 ist dann  Fehler.
  */
  
+<<<<<<< HEAD
  
+=======
+>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62
 int rechnen(T_token token){
     int a, b, result;
 
@@ -121,6 +132,7 @@ int rechnen(T_token token){
             return 0;
 
         case PRT:
+<<<<<<< HEAD
             clearStdout();
             if (peek(&result) != 0) {
                 setErrMode();
@@ -149,12 +161,22 @@ int rechnen(T_token token){
             }
             return 0;
         }
+=======
+          
+            peek();
+            return 0;
+
+        case PRT_ALL:
+            output_entire_stack();
+            return 0;
+>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62
 
         case CLEAR:
             clear_stack();
             return 0;
 
         case DOUBLE:
+<<<<<<< HEAD
             clearStdout();
             if (duplicate() != 0) 
             {
@@ -177,6 +199,13 @@ int rechnen(T_token token){
             }
             integer_to_string(a);
             integer_to_string(b);   
+=======
+            duplicate();
+            return 0;
+
+        case SWAP:
+            swap();
+>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62
             return 0;
 
         default:

@@ -1,5 +1,6 @@
 CompileFlags:
   CompilationDatabase: /Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/out/Tasch/ITSboard/Debug
+<<<<<<< HEAD
   Add:
     - '-D_ILP32=1'
     - '-D_USE_STATIC_INLINE=1'
@@ -431,3 +432,5 @@ CompileFlags:
     - >-
       -I/Users/esmatrabaki/.cache/arm/packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
     - '-I/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/../../ITS_BRD_LIB/Inc'
+=======
+>>>>>>> c9caa946ca8ba15f9ac02a091e43fe7176d1aa62
