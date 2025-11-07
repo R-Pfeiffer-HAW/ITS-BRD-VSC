@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-database"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Aufgabe/tmp/CMakeFiles/Aufgabe.Debug+ITSboard-database.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-database.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-update.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Aufgabe/tmp/Aufgabe.Debug+ITSboard/src/Aufgabe.Debug+ITSboard-stamp/Aufgabe.Debug+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Aufgabe.Debug+ITSboard"
+		],
+		"name" : "Aufgabe.Debug+ITSboard-database"
+	}
+}
