@@ -1,0 +1,20 @@
+build-idx:
+  generated-by: csolution version 2.12.0
+  cdefault: ${CMSIS_COMPILER_ROOT}/cdefault.yml
+  csolution: DrehgeberPolling.csolution.yml
+  cbuild-run: out/DrehgeberPolling+ITSboard.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: DrehgeberPolling.cproject.yml
+  cbuilds:
+    - cbuild: out/DrehgeberPolling/ITSboard/Debug/DrehgeberPolling.Debug+ITSboard.cbuild.yml
+      project: DrehgeberPolling
+      configuration: .Debug+ITSboard
+      messages:
+        info:
+          - DrehgeberPolling.cbuild-pack.yml - file is already up-to-date
+          - DrehgeberPolling+ITSboard.cbuild-run.yml - file is already up-to-date
+          - DrehgeberPolling.Debug+ITSboard.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.16.2
+        - pack: ARM::CMSIS-NN@7.0.0

@@ -17,6 +17,9 @@
 #include "error.h"
 
 
+#include "eingabe.h"
+
+
 int main(void) {
 	initITSboard();    // Initialisierung des ITS Boards
 	
@@ -29,6 +32,9 @@ int main(void) {
 	// Test in Endlosschleife
 	while(1) {
 		HAL_Delay(10000);
+
+		input_signal();
+
 	}
 }
 
