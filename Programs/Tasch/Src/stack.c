@@ -2,7 +2,7 @@
  * @file stack.c
  * @author Esmat Rabaki und Raphael Pfeiffer
  * @date Oktober 2025
- * @brief Implementierung eines einfachen Integer-Stacks.
+ * @brief Implementierung eines einfachen Integer-Stacks..
  *
  * Dieses Modul kapselt die Stack-Datenstruktur für Ganzzahlen und bietet 
  * Operationen wie push, pop, peek, clear, duplicate, swap.
@@ -31,6 +31,7 @@ int isFull(void)
 
 /**
  * @brief Prüft, ob der Stack leer ist.
+ * @return int 1, wenn der Stack leer ist, sonst 0.
  */
 int isEmpty(void) 
 { 
@@ -76,7 +77,8 @@ int pop(int *data)
  */
 
 int peek(int *data) 
-{
+{   
+
     if (isEmpty()) {
         return -1;
     }
@@ -87,12 +89,10 @@ int peek(int *data)
 /**
  * @brief Löscht alle Elemente des Stacks.
  */
-void clear_stack(void) 
+int clear_stack(void) 
 {
     if (isEmpty()) {
-        setNormalMode();
-        printStdout("Stack ist bereits leer.\n");
-        return;
+        return -1;
     }
     top = -1;
     clearStdout();

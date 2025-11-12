@@ -18,7 +18,7 @@
  * @brief Führt die im Token  Operation aus.
  *
  * @param token Token, das den Operator und den Wert enthält.
- * @return Bei bei 0 ist es Erfolg, -1 ist dann  Fehler.
+ * @return Bei bei 0 ist es Erfolg, -1 ist dann  Fehler
  */
  
  
@@ -127,6 +127,7 @@ int rechnen(T_token token){
                 printStdout("FEHLER: Stack ist leer.\n");
                 return -1;  
             }
+            setNormalMode();
             integer_to_string(result);
             return 0;
 
@@ -137,11 +138,10 @@ int rechnen(T_token token){
             int count;
             
             if (output_entire_stack(&stack, &count) != 0) {
-                setNormalMode();
+                setErrMode();
                 printStdout("stack ist leer.\n");
                 return -1;
             }
-            
             setNormalMode();
             for (int i = count - 1; i >= 0; i--) 
             {
@@ -151,7 +151,11 @@ int rechnen(T_token token){
         }
 
         case CLEAR:
-            clear_stack();
+            if (clear_stack() != 0) {
+                setNormalMode();
+                printStdout("Stack ist bereits leer.\n");
+                return -1;
+            }
             return 0;
 
         case DOUBLE:
@@ -164,6 +168,7 @@ int rechnen(T_token token){
             }
            
             peek(&result);
+            setNormalMode();
             integer_to_string(result);
             return 0;
 
@@ -175,6 +180,7 @@ int rechnen(T_token token){
                 printStdout("FEHLER: Stack underflow beim Tauschen (min. 2 Elemente benötigt).\n");
                 return -1;
             }
+            setNormalMode();
             integer_to_string(a);
             integer_to_string(b);   
             return 0;

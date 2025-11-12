@@ -1,6 +1,6 @@
 /**
  * @file umwandeln.c
- * @authors Esmat Rabaki undRaphael Pfeiffer  
+ * @authors Esmat Rabaki undRaphael Pfeiffer.  
  * @brief Enthält Funktionen zur Umwandlung von Integer-Werten
  * in Strings und deren Anzeige auf dem Display.
  *
@@ -31,6 +31,7 @@ void reverse_string(char str[], int length) {
         tmp[s++] = str[t];
     }
     tmp[s] = '\0';
+
     printStdout(tmp);
 } 
 
@@ -41,7 +42,6 @@ void reverse_string(char str[], int length) {
  */
 
 int integer_to_string(int num) {
-
     int i = 0;
     bool negative = false;
     
@@ -82,7 +82,7 @@ int integer_to_string(int num) {
 
     //String-Ende (Null-Terminator)
     str[i] = '\0';
-   
+         
      printStdout(" \n"); // leer zwischen zahlen
      
     // String umkehren, da Ziffern in umgekehrter Reihenfolge gespeichert wurden

@@ -23,9 +23,9 @@
 
 int main(void)
 {
-    initITSboard();    // Initialisierung des ITS Boards
+    initITSboard();                        // Initialisierung des ITS Boards
     GUI_init(DEFAULT_BRIGHTNESS);   // Initialisierung des LCD Boards mit Touch
-    TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
+    TP_Init(false);                       // Initialisierung des LCD Boards mit Touch
 
     initDisplay();
     

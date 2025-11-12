@@ -14,7 +14,7 @@
 /**
  * Unterstützte Operationen:
  *  - NUMBER: Zahl auf den Stack legen
- *  - PLUS: MINUS, MULT, DIV: Arithmetische Operationen mit Fehlerprüfung
+ *  - PLUS: MINUS, MULT, DIV, Arithmetische Operationen mit Fehlerprüfung
  *  - PRT: Obersten Wert ausgeben
  *  - CLEAR: Stack löschen
  *  - DOUBLE: Obersten Wert duplizieren

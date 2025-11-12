@@ -9,7 +9,7 @@
 #define TOKEN_H
 
 // All token for input and stack commands
-#define NUMBER     'n'    //!< Token for an int number 
+#define NUMBER     'n'    //!< Token for an int number. 
 #define PLUS       '+'    //!< Token for + operator 
 #define MINUS      '-'    //!< Token for - operator 
 #define MULT       '*'    //!< Token for * operator 

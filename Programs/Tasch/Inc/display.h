@@ -37,7 +37,7 @@ extern void setNormalMode(void);
  ****************************************************************************************
  *  @brief      This function prints a string to stdout terminal.
  *
- *  @param      msg The value that will be printed on on the terminal.
+ *  @param      msg The value that will be printed on the terminal.
  *
  *  @return     void 
  ****************************************************************************************/

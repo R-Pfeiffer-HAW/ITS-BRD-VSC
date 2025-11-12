@@ -12,7 +12,7 @@
 
 /*
  ****************************************************************************************
- * @brief : This function returns the next token, defined in token.h
+ * @brief : This function returns the next token, defined in token.h.
  *
  * @return Next token will be returned. In case of an error the UNEXPTECTED token will
  *         be returned.

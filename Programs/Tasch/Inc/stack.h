@@ -16,9 +16,9 @@
 
 #include <stdbool.h>   ///< Für bool, true, false
 
-/** @def STACK_SIZE
- *  @brief Maximale Größe des Stacks.
- */
+
+ // Maximale Größe des Stacks.
+ 
 #define STACK_SIZE 10
 
 // ===========================================================
@@ -62,7 +62,7 @@ int peek(int *data);
  * @brief Löscht den gesamten Stack.
  * Setzt den Stack-Zeiger zurück und entfernt alle gespeicherten Werte.
  */
-void clear_stack(void);
+int clear_stack(void);
 
 /**
  * @brief Dupliziert den obersten Wert auf dem Stack.

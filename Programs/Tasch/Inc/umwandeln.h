@@ -5,16 +5,15 @@
  *
  * @date Oktober 2025
  * @authors Esmat Rabaki, Raphael Pfeiffer, HAW Hamburg
- *
  */
 
 #ifndef UMWANDELN_H
 #define UMWANDELN_H
 
-#include <stdbool.h>  ///< Für bool, true, false
+#include <stdbool.h>  // Für bool, true, false
 
 /**
- * @brief Wandelt eine Ganzzahl in einen String um 
+ * @brief Wandelt eine Ganzzahl in einen String um. 
  *
  * @param num Die Zahl, die umgewandelt werden soll.
  */
