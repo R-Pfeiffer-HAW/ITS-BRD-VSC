@@ -3,7 +3,9 @@
 #define AUSGABELEDS_H
 
 
-void toggle_LEDs(void);
+#include <stdint.h>
+
+void toggle_LEDs(uint8_t led_mask, int richtung);
 
 
 

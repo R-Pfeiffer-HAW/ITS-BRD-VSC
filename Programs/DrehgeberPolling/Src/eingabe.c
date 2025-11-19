@@ -2,18 +2,22 @@
 #include "stm32f429xx.h"
 #include <stdbool.h>
 #include <stdint.h>
+#include "ausgabeLEDs.h"
 
+
+// Definitionen für die Pin-Masken
 #define IDR_MASK_PIN_0 (0x01U << (0))
 #define IDR_MASK_PIN_1 (0x01U << (1))
+#define ERROR -1
+#define OK 0
+
 
 // Globale Variablen für den Zustand des Drehgebers
-
-static int aktuellePhase = 0;     // 0 = a, 1 = b, 2 = c, 3 = d
-static int letztePhase = 0;
-static int richtung = 0;          // 1 = vorwärts, -1 = rückwärts, 0 = keine Änderung
-static int schrittZaehler = 0;    // Zählt die Phasenwechsel
-static bool fehler = false;       // Wird true, wenn ein ungültiger Übergang erkannt wird
-
+int aktuellePhase = 0;     // 0 = a, 1 = b, 2 = c, 3 = d
+int letztePhase = 0;
+int richtung = 0;         // 1 = vorwärts, -1 = rückwärts, 0 = keine Änderung
+uint8_t schrittZaehler = 0; // Zählt die Phasenwechsel
+bool fehler = false;        // Wird true, wenn ein ungültiger Übergang erkannt wird
 
 
 /**
@@ -34,6 +38,7 @@ bool lesePinA(void)
 * @brief Liest den Zustand von Pin B des Drehgebers aus.
 * @return true, wenn Pin B HIGH ist, sonst false.
 */
+
 bool lesePinB(void)
 {
     if (IDR_MASK_PIN_1 == (GPIOA->IDR & IDR_MASK_PIN_1)) {
@@ -42,6 +47,7 @@ bool lesePinB(void)
         return false;
     }
 }
+
 
 /**
 * @brief Bestimmt die aktuelle Phase anhand der Eingangssignale.
@@ -55,7 +61,7 @@ int bestimmePhase(bool A, bool B)
     if (A && !B)  return 1;   // Phase b
     if (A && B)   return 2;   // Phase c
     if (!A && B)  return 3;   // Phase d
-    return -1;                // Fehler
+    return ERROR;                // Fehler
 }
 
 /**     
@@ -72,12 +78,11 @@ void eingabeVerarbeitung(void)
 
 
     // Wenn Phase ungültig ist, Fehler setzen
-    if (aktuellePhase == -1)
+    if (aktuellePhase == ERROR)
     {
         fehler = true;
         return;
     }
-
 
 
     // Keine Änderung → nichts tun
@@ -85,7 +90,9 @@ void eingabeVerarbeitung(void)
         return;
 
     // Phasenübergänge auswerten (nach Tabelle aus der Aufgabe)
-    if (letztePhase == 0 && aktuellePhase == 1) {
+    // Vorwärtsbewegung
+    if (letztePhase == 0 && aktuellePhase == 1)
+    {
         // a → b = Vorwärtsbewegung
         richtung = 1;
         schrittZaehler++;
@@ -100,11 +107,8 @@ void eingabeVerarbeitung(void)
         richtung = 1;
         schrittZaehler++;
     } 
-    else if (letztePhase == 3 && aktuellePhase == 0) {
-        // d → a = Vorwärtsbewegung
-        richtung = 1;
-        schrittZaehler++;
-    } 
+
+    // Rückwärtsbewegung
     else if (letztePhase == 1 && aktuellePhase == 0) {
         // b → a = Rückwärtsbewegung
         richtung = -1;
@@ -120,26 +124,17 @@ void eingabeVerarbeitung(void)
         richtung = -1;
         schrittZaehler--;
     } 
-    else if (letztePhase == 0 && aktuellePhase == 3) {
-        // a → d = Rückwärtsbewegung
-        richtung = -1;
-        schrittZaehler--;
-    } 
     else {
         // Alle anderen Übergänge sind ungültig
         fehler = true;
-        richtung = 0;
     }
+    toggle_LEDs(schrittZaehler,richtung ); // Ausgabe der Schrittzahl auf die LEDs
+    
 }
 
-/**
-* @brief Gibt die aktuelle Drehrichtung zurück.
-* @return 1 für Vorwärtsbewegung, -1 für Rückwärtsbewegung, 0 für keine Änderung.
-*/      
-int gibRichtung(void)
-{
-    return richtung; // 1 = vorwärts, -1 = rückwärts, 0 = keine Änderung
-}
+
+   
+
 /**         
 * @brief Gibt die aktuelle Schrittzahl zurück.
 * @return Die aktuelle Schrittzahl
@@ -153,6 +148,7 @@ int gibSchrittzahl(void)
 * @brief Gibt an, ob ein Fehler im Drehgeber erkannt wurde.
 * @return true, wenn ein Fehler erkannt wurde, sonst false.
 */
+
 bool gibFehler(void)
 {
     return fehler;

@@ -341,6 +341,10 @@ build:
       files:
         - file: ../../../../Src/main.c
           category: sourceC
+        - file: ../../../../Src/eingabe.c
+          category: sourceC
+        - file: ../../../../Src/rechnen.c
+          category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h
       category: header

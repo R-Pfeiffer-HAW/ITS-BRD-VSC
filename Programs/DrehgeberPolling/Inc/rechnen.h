@@ -5,23 +5,22 @@
 
 
 #include <stdbool.h>
+#include <stdint.h>
 
 /** 
 * @brief Berechnet den Drehwinkel basierend auf der Schrittzahl.
 * @param schritte Anzahl der Schritte (Phasenwechsel)
 * @return Drehwinkel in Grad
 */
-double berechneDrehwinkel(int schritte);
+double berechneWinkel(double schritte);
 
 
-/** 
-* @brief Berechnet die Drehgeschwindigkeit in Schritten pro Sekunde.
-* @param alteSchritte Schrittzahl zu Beginn des Zeitintervalls
-* @param neueSchritte Schrittzahl am Ende des Zeitintervalls
-* @param startZeit Startzeit in Millisekunden
-* @param endZeit Endzeit in Millisekunden
-* @return Drehgeschwindigkeit in Schritten pro Sekunde
+/**
+* @brief Berechnet die Drehgeschwindigkeit basierend auf der Änderung der Schrittzahl und der Zeit.
+* @param letzterWinkel Der vorherige Winkel.
+* @param aktuellerWinkel Der aktuelle Winkel.
+* @param alterZeit Die Startzeit in Millisekunden.
+* @param aktuellerZeit Die Endzeit in Millisekunden.  
 */
-double berechneDrehgeschwindigkeit(double alteSchritte, double neueSchritte, double startZeit, double endZeit);
-
+double berechneGeschwindigkeit(double letzterWinkel, double aktuellerWinkel, uint32_t alterZeit, uint32_t aktuellerZeit);
 #endif

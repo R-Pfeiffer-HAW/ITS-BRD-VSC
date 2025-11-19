@@ -15,11 +15,11 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
-
+#include "rechnen.h"
 
 #include "timer.h"
 #include "eingabe.h"
-#include "rechnen.h"
+#include <stdint.h>
 
 
 int main(void) {
@@ -29,26 +29,29 @@ int main(void) {
 	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
 	initTimer();                // Timer initialisieren
 
-	double startZeit = getTimeStamp();
-	double startSchritte = gibSchrittzahl();
+
+	double startSchritte;
+	double aktuellerWinkel;
+	double letzterWinkel = 0.0;
+	double geschwindigkeit;
+	uint32_t startZeit = getTimeStamp();
 
 	// Test in Endlosschleife
 	while(1) {
-
 		eingabeVerarbeitung();
-		// abfrage für 250ms und 500ms  einfügen
+		uint32_t endZeit = getTimeStamp();
+		startSchritte = gibSchrittzahl();
 
-
-		double endZeit = getTimeStamp();
-		double endSchritte = gibSchrittzahl();
-
-		double drehwinkel = berechneDrehwinkel(endSchritte);
-		double geschwindigkeit = berechneDrehgeschwindigkeit(startSchritte, endSchritte, startZeit, endZeit);
-
-
-
+		//differnz Zeit
+		uint32_t deltaZeit = endZeit - startZeit; 
+		// Wenn die Zeitdifferenz zwischen 250 ms und 500 ms liegt, berechne die Geschwindigkeit und den Drehwinkel
+		if (deltaZeit >= 250 && deltaZeit <= 500) 
+		{
+			aktuellerWinkel = berechneWinkel(startSchritte);
+			geschwindigkeit = berechneGeschwindigkeit(letzterWinkel, aktuellerWinkel, startZeit, endZeit);
+		}
 		startZeit = endZeit;
-        startSchritte = endSchritte;
+        letzterWinkel = aktuellerWinkel;
 	}
 }
 

@@ -1,10 +1,16 @@
 
 #include <stdbool.h>
+#include <stdint.h>
+
 
 #ifndef EINGABE_H
 #define EINGABE_H
 
-
+extern int aktuellePhase;
+extern int letztePhase;
+extern int richtung;
+extern uint8_t schrittZaehler;
+extern bool fehler;
 
 /**
 * @brief Liest den Zustand von Pin A des Drehgebers aus.

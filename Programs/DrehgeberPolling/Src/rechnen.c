@@ -1,6 +1,7 @@
 
 
 #include "rechnen.h"
+#include <stdint.h>
 
 /**             
 * @brief Berechnet den Drehwinkel basierend auf der Schrittzahl.
@@ -9,30 +10,29 @@
 */
 double berechneWinkel(double schritte)
 {
-     int schritteProUmdrehung = 1200; 
+     double schritteProUmdrehung = 1200.0; 
      double drehwinkel = (schritte / schritteProUmdrehung) * 360.0;
 
     return drehwinkel;
-    
 }       
 
 /**
 * @brief Berechnet die Drehgeschwindigkeit basierend auf der Änderung der Schrittzahl und der Zeit.
-* @param alteSchritte Die vorherige Schrittzahl.
-* @param neueSchritte Die aktuelle Schrittzahl.
-* @param startZeit Die Startzeit in Millisekunden.
-* @param endZeit Die Endzeit in Millisekunden.  
+* @param letzterWinkel Der vorherige Winkel.
+* @param aktuellerWinkel Der aktuelle Winkel.
+* @param alterZeit Die Startzeit in Millisekunden.
+* @param aktuellerZeit Die Endzeit in Millisekunden.  
 */
-double berechneGeschwindigkeit(double alteSchritte, double neueSchritte, double startZeit, double endZeit)
+double berechneGeschwindigkeit(double letzterWinkel, double aktuellerWinkel, uint32_t alterZeit, uint32_t aktuellerZeit)
 {
-    double zeitSekunden = (endZeit - startZeit) / 1000.0; // Millisekunden in Sekunden umrechnen
+    double zeitSekunden = (aktuellerZeit - alterZeit) / 90000000.0; // Millisekunden in Sekunden umrechnen
 
-    double schritte = neueSchritte - alteSchritte;
+    double winkel = aktuellerWinkel - letzterWinkel;
 
     if (zeitSekunden <= 0) {
         return 0; //  Division durch Null
     }
 
-    double schritteProSekunde = schritte / zeitSekunden;
+    double schritteProSekunde = winkel / zeitSekunden;
     return schritteProSekunde;
 }

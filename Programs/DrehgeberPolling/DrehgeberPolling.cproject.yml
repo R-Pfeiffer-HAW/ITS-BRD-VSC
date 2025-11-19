@@ -180,10 +180,13 @@ project:
         - file: ../../ITS_BRD_LIB/Inc/USART_STM32F4xx.h
 
 
+
     # Benutzerdefinierte Programmdateien
     - group: Program/User/Src
       files:
         - file: Src/main.c
+        - file: Src/eingabe.c
+        - file: Src/rechnen.c
 
 
   components:
