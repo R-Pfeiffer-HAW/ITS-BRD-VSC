@@ -10,7 +10,7 @@
 #define IDR_MASK_PIN_1 (0x01U << (1))
 #define ERROR -1
 #define OK 0
-
+//slkalskmjakl
 
 // Globale Variablen für den Zustand des Drehgebers
 int aktuellePhase = 0;     // 0 = a, 1 = b, 2 = c, 3 = d
@@ -27,7 +27,7 @@ bool fehler = false;        // Wird true, wenn ein ungültiger Übergang erkannt
 
 bool lesePinA(void)
 {
-    if (IDR_MASK_PIN_0 == (GPIOA->IDR & IDR_MASK_PIN_0)) {
+    if (IDR_MASK_PIN_0 == (GPIOF->IDR & IDR_MASK_PIN_0)) {
         return true;
     } else {
         return false;
@@ -127,6 +127,7 @@ void eingabeVerarbeitung(void)
     else {
         // Alle anderen Übergänge sind ungültig
         fehler = true;
+        // led 21 muss ausgehen
     }
     toggle_LEDs(schrittZaehler,richtung ); // Ausgabe der Schrittzahl auf die LEDs
     

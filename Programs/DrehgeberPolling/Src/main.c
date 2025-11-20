@@ -15,8 +15,8 @@
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
 #include "error.h"
-#include "rechnen.h"
 
+#include "rechnen.h"
 #include "timer.h"
 #include "eingabe.h"
 #include <stdint.h>
@@ -39,17 +39,23 @@ int main(void) {
 	// Test in Endlosschleife
 	while(1) {
 		eingabeVerarbeitung();
+
 		uint32_t endZeit = getTimeStamp();
 		startSchritte = gibSchrittzahl();
-
+		
+		// 
 		//differnz Zeit
 		uint32_t deltaZeit = endZeit - startZeit; 
 		// Wenn die Zeitdifferenz zwischen 250 ms und 500 ms liegt, berechne die Geschwindigkeit und den Drehwinkel
 		if (deltaZeit >= 250 && deltaZeit <= 500) 
 		{
 			aktuellerWinkel = berechneWinkel(startSchritte);
+			//toDo
+			// wenn die phase da ist dann brechne die geschwindigkeit
 			geschwindigkeit = berechneGeschwindigkeit(letzterWinkel, aktuellerWinkel, startZeit, endZeit);
+
 		}
+
 		startZeit = endZeit;
         letzterWinkel = aktuellerWinkel;
 	}
