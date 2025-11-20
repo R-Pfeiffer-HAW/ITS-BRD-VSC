@@ -51,7 +51,7 @@ int main(void) {
 		{
 			aktuellerWinkel = berechneWinkel(startSchritte);
 			//toDo
-			// wenn die phase da ist dann brechne die geschwindigkeit
+			// wenn die letzte phase und die aktuelle phase gleich sind, dann brechne nicht wenn ungleich dann brechne es 
 			geschwindigkeit = berechneGeschwindigkeit(letzterWinkel, aktuellerWinkel, startZeit, endZeit);
 
 		}
