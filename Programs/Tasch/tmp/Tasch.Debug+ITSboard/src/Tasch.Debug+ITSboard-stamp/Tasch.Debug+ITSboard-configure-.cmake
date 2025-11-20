@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake;-G;Ninja;-S;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard;-B;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/1;-DSOLUTION_ROOT=/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch;-DCMSIS_PACK_ROOT=/Users/esmatrabaki/.cache/arm/packs;-DCMSIS_COMPILER_ROOT=/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.11.0/etc")
+set(command "/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake;-G;Ninja;-S;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard;-B;/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/1;-DSOLUTION_ROOT=/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch;-DCMSIS_PACK_ROOT=/Users/esmatrabaki/.cache/arm/packs;-DCMSIS_COMPILER_ROOT=/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.open.cmsis.pack.cmsis.toolbox/2.12.0/etc")
 set(log_merged "")
 set(log_output_on_failure "ON")
 set(stdout_log "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure-out.log")

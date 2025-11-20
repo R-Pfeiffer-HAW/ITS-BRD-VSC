@@ -14,6 +14,27 @@
 #include <limits.h>
 #include "umwandeln.h"
 
+
+//Fehlercodes
+#define OK 0
+//PLUS
+#define PLUSUNDERFLOW -3
+#define PLUSARITHOVERFLOW -4
+//MINUS
+#define MINUSUNDERFLOW -5
+#define MINUSARITHOVERFLOW -6
+//MULT
+#define MULTUNDERFLOW -7
+#define MULTARITHOVERFLOW -8
+//DIV
+#define DIVUNDERFLOW -9
+#define DIVARITHOVERFLOW -10
+#define DIVBYZERO -11
+//sonstige
+#define UNKNOWNOPERATOR -17
+
+
+
 /**
  * @brief Führt die im Token  Operation aus.
  *
@@ -23,113 +44,92 @@
  
  
 int rechnen(T_token token){
-    int a, b, result;
+    int a, b, result, error;
 
     switch (token.tok)
     {
         case NUMBER:
-            if (push(token.val) == -1) 
+            error = push(token.val);
+            if (error != OK) 
             {
-                setErrMode();
-                printStdout("FEHLER: Stack overflow.\n");
-                return -1;
+                return error;
             }
-            return 0;
+            return OK;
 
         case PLUS:
-            if (pop(&a) != 0 || pop(&b) != 0) 
+            if (pop(&a) != OK || pop(&b) != OK) 
             {
-                setErrMode();
-                printStdout("FEHLER: Stack underflow bei Addition.\n");
-                return -1;
+                return PLUSUNDERFLOW;
             }
 
             // Overflow-Check für Addition
             if ((a > 0 && b > INT_MAX - a) || (a < 0 && b < INT_MIN - a)) 
             {
-                setErrMode();
-                printStdout("FEHLER: Integer Overflow bei Addition.\n");
-                return -1;
+                return PLUSARITHOVERFLOW;
             }
-
             result = b + a;
             push(result);
-            return 0;
+            return OK;
 
         case MINUS:
-            if (pop(&a) != 0 || pop(&b) != 0)
+            if (pop(&a) != OK || pop(&b) != OK)
             {
-                setErrMode();
-                printStdout("FEHLER: Stack underflow bei Subtraktion.\n");
-                return -1;
+                return MINUSUNDERFLOW;
             }
-
             // Overflow-Check für Subtraktion
             if ((a < 0 && b > INT_MAX + a) || (a > 0 && b < INT_MIN + a)) 
             {
-                setErrMode();
-                printStdout("FEHLER: Integer Overflow bei Subtraktion.\n");
-                return -1;
+                return MINUSARITHOVERFLOW;
             }
-
             result = b - a;
             push(result);
-            return 0;
+            return OK;
 
         case MULT:
-            if (pop(&a) != 0 || pop(&b) != 0) 
+            if (pop(&a) != OK || pop(&b) != OK) 
             {
-                setErrMode();
-                printStdout("FEHLER: Stack underflow bei Multiplikation.\n");
-                return -1;
+                return MULTUNDERFLOW;
             }
-
-            if (a == 0 || b == 0) {
-                push(0);
-                return 0;
-            }
-
-            // Overflowprüfung Multiplikation
-            if ((a > 0 && b > INT_MAX / a) || (a < 0 && b < INT_MIN / a) ) 
+            if (a == 0 || b == 0)     
             {
-                setErrMode();
-                printStdout("FEHLER: Integer Overflow bei Multiplikation.\n");
-                return -1;
+                return OK; // Kein Overflow
             }
-
+            if ((a > 0 && b > 0 && a > INT_MAX / b) ||
+                (a > 0 && b < 0 && b < INT_MIN / a) ||
+                (a < 0 && b > 0 && a < INT_MIN / b) ||
+                (a < 0 && b < 0 && a < INT_MAX / b)) {
+                return MULTARITHOVERFLOW;
+            }
             result = b * a;
             push(result);
-            return 0;
+            return OK;
 
         case DIV:
-            if (pop(&a) != 0 || pop(&b) != 0) 
+            if (pop(&a) != OK || pop(&b) != OK) 
             {
-                setErrMode();
-                printStdout("FEHLER: Stack underflow bei Division.\n");
-                return -1;
+                return DIVUNDERFLOW;
             }
-
+            if (a == INT_MIN && b == -1) 
+            {
+              return DIVARITHOVERFLOW;
+}
             if (a == 0) 
             {
-                setErrMode();
-                printStdout("FEHLER: Division durch Null.\n");
-                return -1;
+                return DIVBYZERO;
             }
-
             result = b / a;
             push(result);
-            return 0;
+            return OK;
 
         case PRT:
             clearStdout();
-            if (peek(&result) != 0) {
-                setErrMode();
-                printStdout("FEHLER: Stack ist leer.\n");
-                return -1;  
+            error = peek(&result);
+            if (error != OK) {
+                return error;  
             }
             setNormalMode();
             integer_to_string(result);
-            return 0;
+            return OK;
 
         case PRT_ALL:
         {
@@ -137,57 +137,51 @@ int rechnen(T_token token){
             int *stack;
             int count;
             
-            if (output_entire_stack(&stack, &count) != 0) {
-                setErrMode();
-                printStdout("stack ist leer.\n");
-                return -1;
+            error = output_entire_stack(&stack, &count);
+            if (error != OK) {
+                return error;
             }
             setNormalMode();
             for (int i = count - 1; i >= 0; i--) 
             {
                 integer_to_string(stack[i]);
             }
-            return 0;
+            return OK;
         }
 
         case CLEAR:
-            if (clear_stack() != 0) {
-                setNormalMode();
-                printStdout("Stack ist bereits leer.\n");
-                return -1;
+            error = clear_stack();
+            if (error != OK) {
+                return error;
             }
-            return 0;
+            return OK;
 
         case DOUBLE:
             clearStdout();
-            if (duplicate() != 0) 
+            error = duplicate();
+            if (error != OK) 
             {
-                setErrMode();
-                printStdout("FEHLER: Stack underflow beim Duplizieren (min. 1 Element benötigt).\n");
-                return -1;
+                return error;
             }
            
             peek(&result);
             setNormalMode();
             integer_to_string(result);
-            return 0;
+            return OK;
 
         case SWAP:
             clearStdout();
-            if (swap(a, b) != 0) 
+            error = swap(a, b);
+            if (error != OK) 
             {
-                setErrMode();
-                printStdout("FEHLER: Stack underflow beim Tauschen (min. 2 Elemente benötigt).\n");
-                return -1;
+                return error;
             }
             setNormalMode();
             integer_to_string(a);
             integer_to_string(b);   
-            return 0;
+            return OK;
 
         default:
-            setErrMode();
-            printStdout("FEHLER: Unbekannter Operator.\n");
-            return -1;
+            return UNKNOWNOPERATOR;
     }
 }

@@ -15,6 +15,23 @@
 
 #define SIZE 10
 
+//Fehlercodes
+#define OK 0
+#define STACKOVERFLOW -1
+#define STACKUNDERFLOW -2
+//PRT
+#define PRTSTACKEMPTY -12
+//PRT_ALL
+#define PRTALLSTACKEMPTY -13
+// clear stack
+#define CLEARSTACKEMPTY -14
+//DUPLICATE
+#define DUPUNDERFLOW -15    
+//SWAP
+#define SWAPUNDERFLOW -16
+
+
+// Stack-Datenstruktur
 static int stack[SIZE];
 static int top = -1; 
 
@@ -48,10 +65,10 @@ int push(int data)
 {
     if (isFull()) 
     {
-        return -1;
+        return STACKOVERFLOW;
     }
     stack[++top] = data; 
-    return 0;
+    return OK;
 }
 
 /**
@@ -67,7 +84,7 @@ int pop(int *data)
         return -1; 
     }
     *data = stack[top--]; 
-    return 0;
+    return OK;
 }
 
 /**
@@ -80,56 +97,10 @@ int peek(int *data)
 {   
 
     if (isEmpty()) {
-        return -1;
+        return PRTSTACKEMPTY;
     }
      *data = stack[top]; 
-    return 0;
-}
-
-/**
- * @brief Löscht alle Elemente des Stacks.
- */
-int clear_stack(void) 
-{
-    if (isEmpty()) {
-        return -1;
-    }
-    top = -1;
-    clearStdout();
-}
-
-/**
- * @brief Dupliziert das oberste Element des Stacks.
- * @return int 0 bei Erfolg, -1 bei Stack Overflow oder wenn der Stack leer ist.
- */
-int duplicate(void) 
-{
-    if (isEmpty()) {
-        return -1;
-    }
-    int v = stack[top];
-    push(v);
-    return 0;
-}
-
-/**
- * @brief Vertauscht die beiden obersten Elemente des Stacks.
- * @return int 0 bei Erfolg, -1 wenn der Stack weniger als zwei Elemente hat.    
- *@param valA ist das oberste wert von stack
- *@param valB ist das zweit oberste wert von stack
- */
-int swap(int valA, int valB) 
-{
-    if (top < 1) 
-    {
-        return -1;
-    }
-    valA = stack[top]; 
-    valB = stack[top - 1]; 
-
-    stack[top] = valB;
-    stack[top - 1] = valA;
-    return 0;
+    return OK;
 }
 
 /**
@@ -143,9 +114,57 @@ int output_entire_stack(int **stack_data, int *stack_size)
 {
     if (isEmpty()) {
 
-        return -1;
+        return PRTALLSTACKEMPTY;
     }
     *stack_data = stack;
     *stack_size = top + 1;
-    return 0;
+    return OK;
 }
+
+/**
+ * @brief Löscht alle Elemente des Stacks.
+ */
+int clear_stack(void) 
+{
+    if (isEmpty()) 
+    {
+        return CLEARSTACKEMPTY;
+    }
+    top = -1;
+    clearStdout();
+}
+
+/**
+ * @brief Dupliziert das oberste Element des Stacks.
+ * @return int 0 bei Erfolg, -1 bei Stack Overflow oder wenn der Stack leer ist.
+ */
+int duplicate(void) 
+{
+    if (isEmpty()) {
+        return DUPUNDERFLOW;
+    }
+    int v = stack[top];
+    push(v);
+    return OK;
+}
+
+/**
+ * @brief Vertauscht die beiden obersten Elemente des Stacks.
+ * @return int 0 bei Erfolg, -1 wenn der Stack weniger als zwei Elemente hat.    
+ *@param valA ist das oberste wert von stack
+ *@param valB ist das zweit oberste wert von stack
+ */
+int swap(int valA, int valB) 
+{
+    if (top < 1) 
+    {
+        return SWAPUNDERFLOW;
+    }
+    valA = stack[top]; 
+    valB = stack[top - 1]; 
+
+    stack[top] = valB;
+    stack[top - 1] = valA;
+    return OK;
+}
+

@@ -7,13 +7,14 @@
  * @date Okt 2025
  */
 
-#include "display.h"
+
 #include <stdbool.h> // Für den booleschen Wert
 #include <stddef.h> // Für NULL
+#include "display.h"
 
 
 
-static char str[12]; 
+static char str[13]; 
 
 /**
  * @brief Gibt einen String in umgekehrter Reihenfolge auf dem Display aus.
@@ -56,7 +57,7 @@ int integer_to_string(int num) {
 
     // Sonderfall INT_MIN
     if (num == -2147483648) {
-        printStdout("-2147483648");
+        printStdout("\n -2147483648");
         return 0;
     }
 

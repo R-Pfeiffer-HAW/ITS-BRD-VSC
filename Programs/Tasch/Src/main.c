@@ -19,6 +19,7 @@
 #include "scanner.h"
 #include "token.h"
 #include "rechnen.h"
+#include "errorhandler.h"
 
 
 int main(void)
@@ -31,9 +32,10 @@ int main(void)
     
     // Test in Endlosschleife
     while(1) {
-
+      int error_code;
       T_token t = nextToken();
-      rechnen(t);
+      error_code = rechnen(t);
+      handle_error(error_code);
     }
     // return 0; // nicht erreicht
 }

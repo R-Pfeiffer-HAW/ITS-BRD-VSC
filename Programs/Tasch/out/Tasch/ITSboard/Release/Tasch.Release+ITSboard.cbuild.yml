@@ -1,5 +1,5 @@
 build:
-  generated-by: csolution version 2.11.0
+  generated-by: csolution version 2.12.0
   solution: ../../../../Tasch.csolution.yml
   project: ../../../../Tasch.cproject.yml
   context: Tasch.Release+ITSboard
@@ -335,11 +335,11 @@ build:
           category: sourceC
         - file: ../../../../Src/rechnen.c
           category: sourceC
-        - file: ../../../../Src/token.c
-          category: sourceC
         - file: ../../../../Src/stack.c
           category: sourceC
         - file: ../../../../Src/umwandeln.c
+          category: sourceC
+        - file: ../../../../Src/errorhandler.c
           category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Release_ITSboard/RTE_Components.h

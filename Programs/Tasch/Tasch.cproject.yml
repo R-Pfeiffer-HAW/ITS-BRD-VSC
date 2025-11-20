@@ -172,6 +172,12 @@ project:
     - group: Program/User/Inc
       files:
         - file: ../../ITS_BRD_LIB/Inc/lcd.h
+        - file: ../../ITS_BRD_LIB/Inc/init.h
+        - file: ../../ITS_BRD_LIB/Inc/terminal.h
+        - file: ../../ITS_BRD_LIB/Inc/keypad.h
+        - file: ../../ITS_BRD_LIB/Inc/delay.h
+        - file: ../../ITS_BRD_LIB/Inc/timer.h   
+        - file: ../../ITS_BRD_LIB/Inc/USART_STM32F4xx.h
 
 
     # Benutzerdefinierte Programmdateien
@@ -183,6 +189,7 @@ project:
         - file: Src/rechnen.c
         - file: Src/stack.c
         - file: Src/umwandeln.c
+        - file: Src/errorhandler.c
 
   components:
     - component: ARM::CMSIS:CORE
