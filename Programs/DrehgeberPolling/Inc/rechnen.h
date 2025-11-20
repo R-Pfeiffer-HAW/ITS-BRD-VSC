@@ -12,7 +12,7 @@
 * @param schritte Anzahl der Schritte (Phasenwechsel)
 * @return Drehwinkel in Grad
 */
-double berechneWinkel(double schritte);
+double berechneWinkel(uint32_t schritte);
 
 
 /**
@@ -20,7 +20,8 @@ double berechneWinkel(double schritte);
 * @param letzterWinkel Der vorherige Winkel.
 * @param aktuellerWinkel Der aktuelle Winkel.
 * @param alterZeit Die Startzeit in Millisekunden.
-* @param aktuellerZeit Die Endzeit in Millisekunden.  
+* @param aktuellerZeit Die Endzeit in Millisekunden. 
+* @return der berechnete GeschwindigkeitProSekunde 
 */
 double berechneGeschwindigkeit(double letzterWinkel, double aktuellerWinkel, uint32_t alterZeit, uint32_t aktuellerZeit);
 #endif

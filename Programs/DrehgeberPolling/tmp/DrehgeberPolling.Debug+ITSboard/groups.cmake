@@ -207,6 +207,8 @@ add_library(Group_Program_User_Src OBJECT
   "${SOLUTION_ROOT}/Src/main.c"
   "${SOLUTION_ROOT}/Src/eingabe.c"
   "${SOLUTION_ROOT}/Src/rechnen.c"
+  "${SOLUTION_ROOT}/Src/ausgabeLEDs.c"
+  "${SOLUTION_ROOT}/Src/error.c"
 )
 target_include_directories(Group_Program_User_Src PUBLIC
   $<TARGET_PROPERTY:${CONTEXT},INTERFACE_INCLUDE_DIRECTORIES>

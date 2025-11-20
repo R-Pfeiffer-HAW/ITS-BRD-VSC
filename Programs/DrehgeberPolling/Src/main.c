@@ -7,6 +7,7 @@
   */
 /* Includes ------------------------------------------------------------------*/
 
+#include "ausgabeLEDs.h"
 #include "stm32f4xx_hal.h"
 #include "init.h"
 #include "LCD_GUI.h"
@@ -14,8 +15,8 @@
 #include "lcd.h"
 #include "fontsFLASH.h"
 #include "additionalFonts.h"
-#include "error.h"
 
+#include "error.h"
 #include "rechnen.h"
 #include "timer.h"
 #include "eingabe.h"
@@ -39,25 +40,19 @@ int main(void) {
 	// Test in Endlosschleife
 	while(1) {
 		eingabeVerarbeitung();
-
-		uint32_t endZeit = getTimeStamp();
-		startSchritte = gibSchrittzahl();
-		
-		// 
-		//differnz Zeit
-		uint32_t deltaZeit = endZeit - startZeit; 
-		// Wenn die Zeitdifferenz zwischen 250 ms und 500 ms liegt, berechne die Geschwindigkeit und den Drehwinkel
-		if (deltaZeit >= 250 && deltaZeit <= 500) 
+		HAL_Delay(100);
+		bool s6 = readGPIOPIN();
+		// wenn taste s6 gedrückt ist, geh rein und setzte alle Variablen zurück
+		if(s6 == true)
 		{
-			aktuellerWinkel = berechneWinkel(startSchritte);
-			//toDo
-			// wenn die letzte phase und die aktuelle phase gleich sind, dann brechne nicht wenn ungleich dann brechne es 
-			geschwindigkeit = berechneGeschwindigkeit(letzterWinkel, aktuellerWinkel, startZeit, endZeit);
-
+			fehlerZuruecksetzen();
+			lcdPrintS("allles würde zurückgesetzt");
 		}
-
-		startZeit = endZeit;
-        letzterWinkel = aktuellerWinkel;
+		// wenn ein fehler bei der phase auftretet, berechne nix  
+		if (gibFehler() == false)
+		{
+			lcdPrintS("kein Fehler");
+		}
 	}
 }
 

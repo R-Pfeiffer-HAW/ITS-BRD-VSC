@@ -1,7 +1,12 @@
+/** 
+* @file eingabe.h
+* @author Esmat Rabaki, Raphael Pfeiffer
+* @brief hier wird die Kanal A und Kanal B eingelesen. dann wird 
+* die phasenwechsel überprüft. 
+*/
 
 #include <stdbool.h>
 #include <stdint.h>
-
 
 #ifndef EINGABE_H
 #define EINGABE_H
@@ -9,7 +14,7 @@
 extern int aktuellePhase;
 extern int letztePhase;
 extern int richtung;
-extern uint8_t schrittZaehler;
+extern uint32_t schrittZaehler;
 extern bool fehler;
 
 /**
@@ -33,24 +38,18 @@ bool lesePinB(void);
 */
 int bestimmePhase(bool A, bool B);
 
-/**
+/**     
 * @brief verarbeitet die Eingangssignale des Drehgebers und aktualisiert die Zustände.
+* @return es wird entweder Fehler oder okay ausgegeben 
 */
 void eingabeVerarbeitung(void); 
 
-
-/**
-* @brief Gibt die aktuelle Drehrichtung zurück.
-* @return 1 für Vorwärtsbewegung, -1 für Rückwärtsbewegung, 0 für keine Änderung.
-*/
-int gibRichtung(void);  
 
 /**
 * @brief Gibt die aktuelle Schrittzahl zurück.
 * @return Die aktuelle Schrittzahl des Drehgebers.
 */
 int gibSchrittzahl(void);
-
 
 /** @brief Gibt den Fehlerstatus zurück.
 *   @return true, wenn ein Fehler erkannt wurde, sonst false.

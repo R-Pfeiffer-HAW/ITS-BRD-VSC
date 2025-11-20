@@ -345,6 +345,10 @@ build:
           category: sourceC
         - file: ../../../../Src/rechnen.c
           category: sourceC
+        - file: ../../../../Src/ausgabeLEDs.c
+          category: sourceC
+        - file: ../../../../Src/error.c
+          category: sourceC
   constructed-files:
     - file: ../../../../RTE/_Debug_ITSboard/RTE_Components.h
       category: header
