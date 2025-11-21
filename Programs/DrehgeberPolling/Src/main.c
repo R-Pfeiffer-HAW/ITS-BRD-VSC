@@ -46,12 +46,14 @@ int main(void) {
 		if(s6 == true)
 		{
 			fehlerZuruecksetzen();
-			lcdPrintS("allles würde zurückgesetzt");
+			lcdPrintS("zurücksetzen");
 		}
 		// wenn ein fehler bei der phase auftretet, berechne nix  
 		if (gibFehler() == false)
 		{
-			lcdPrintS("kein Fehler");
+			lcdPrintS("kein fehler");
+		}else {
+			lcdPrintS("fehler");
 		}
 	}
 }

@@ -15,15 +15,18 @@
  * @param led_mask Bitmaske, die angibt, welche LEDs geschaltet werden sollen.
  *@param richtung da wird entweder 1(vorwärts) oder -1(rückwärts) gegeben  
  */
-void toggle_LEDs(uint8_t led_mask, int richtung);
+void toggle_LEDs(uint32_t led_mask, int richtung);
 /**
 *@brief LED21 geht an, wenn es fehler bei der phasen auftreten
 */  
 void toggle_LEDs_Error();
+
+void rest_LEDs_Error();
+
 /**
 *@brief es wird überprüft, ob taster S6 gedrückt würde.
 *
- */
+*/
 bool readGPIOPIN ();
 
 #endif 

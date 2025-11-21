@@ -23,28 +23,29 @@
  * @param led_mask Bitmaske, die angibt, welche LEDs geschaltet werden sollen.
  *@param richtung da wird entweder 1(vorwärts) oder -1(rückwärts) gegeben  
  */
-void toggle_LEDs(uint8_t led_mask, int richtung) 
+void toggle_LEDs(uint32_t led_mask, int richtung) 
 {   
+    //von 32bit in 8 bit uwmandeln
+    uint8_t mask = (uint8_t)led_mask;
     GPIOD->BSRR = (0x0F << 16);
-    GPIOD->BSRR = (0x01 << (led_mask));
+    GPIOD->BSRR = mask;
     if (richtung ==1)
     {
         GPIOE->BSRR = BSRR_MASK_PIN_23; // LED 23 anschalten (vorwärts)
         GPIOE->BSRR = (BSRR_MASK_PIN_22 << 16); // LED 22 ausschalten
-        GPIOE->BSRR = (BSRR_MASKE_PIN_21 << 16); // LED 21 ausschalten(fehler)
     }else {
         GPIOE->BSRR = BSRR_MASK_PIN_22; // LED 22 anschalten (rückwärts)
         GPIOE->BSRR = (BSRR_MASK_PIN_23 << 16); // LED 23 ausschalten (vorwärts)
-        GPIOE->BSRR = (BSRR_MASKE_PIN_21 << 16); // LED 21 ausschalten(fehler)
     }
 } 
 /**
 *@brief LED21 geht an, wenn es fehler bei der phasen auftreten
 */  
    void toggle_LEDs_Error(){
-    GPIOE->BSRR = BSRR_MASKE_PIN_21; // LED 21 einschalten(fehler)
-    GPIOE->BSRR = (BSRR_MASK_PIN_23 << 16); // LED 23 anschalten (vorwärts)
-    GPIOE->BSRR = (BSRR_MASK_PIN_22 << 16); // LED 22 ausschalten        
+    GPIOE->BSRR = BSRR_MASKE_PIN_21; // LED 21 einschalten(fehler)  
+    }
+   void rest_LEDs_Error(){
+    GPIOE->BSRR = BSRR_MASKE_PIN_21 << 16; // LED 21 einschalten(fehler)  
     }
 /**
 *@brief es wird überprüft, ob taster S6 gedrückt würde.

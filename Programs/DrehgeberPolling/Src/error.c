@@ -5,6 +5,7 @@
 */
 
 #include "eingabe.h"
+#include "ausgabeLEDs.h"
 
 
 /**
@@ -16,5 +17,8 @@ void fehlerZuruecksetzen(void)
     richtung = 0;          // Richtung neutralisieren (optional)
     letztePhase = aktuellePhase; // Damit kein direkt neuer Fehler entsteht
     schrittZaehler=0;
+    rest_LEDs_Error();
+
+
 }
 
