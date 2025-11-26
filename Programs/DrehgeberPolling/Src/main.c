@@ -21,6 +21,7 @@
 #include "timer.h"
 #include "eingabe.h"
 #include <stdint.h>
+#include "display.h"
 
 
 int main(void) {
@@ -35,6 +36,7 @@ int main(void) {
 	double aktuellerWinkel;
 	double letzterWinkel = 0.0;
 	double geschwindigkeit;
+	int letzterPhase=0;
 	uint32_t startZeit = getTimeStamp();
 
 	// Test in Endlosschleife
@@ -46,14 +48,32 @@ int main(void) {
 		if(s6 == true)
 		{
 			fehlerZuruecksetzen();
-			lcdPrintS("zurücksetzen");
+			lcdPrintS("2"); // es wurde zurückgesetzt;
 		}
-		// wenn ein fehler bei der phase auftretet, berechne nix  
-		if (gibFehler() == false)
-		{
-			lcdPrintS("kein fehler");
-		}else {
-			lcdPrintS("fehler");
+		if (gibFehler() == false && s6 == true )
+        {
+            uint32_t endZeit = getTimeStamp();
+            uint32_t deltaZeit = endZeit - startZeit;
+
+            // Wenn die Zeitdifferenz zwischen 250 ms und 500 ms liegt, berechne die Geschwindigkeit und den Drehwinkel
+            if (deltaZeit >= 250)
+            {
+				startSchritte = gibSchrittzahl();
+				int aktuellerPahse = gibPhase();
+				if(aktuellerPahse != letzterPhase)
+				{
+					aktuellerWinkel = berechneWinkel(startSchritte);
+                	geschwindigkeit = berechneGeschwindigkeit(letzterWinkel, aktuellerWinkel, startZeit, endZeit);
+					letzterWinkel = aktuellerWinkel;
+					letzterPhase = aktuellerPahse;
+					lcdPrintS("es geht");   // dieser if geht 
+            	}
+				startZeit = endZeit;
+
+            }
+			lcdPrintS("0"); //Es gab kein Fehler
+        }else {
+		lcdPrintS("1"); //Es gab ein Fehler bei den Phasen
 		}
 	}
 }

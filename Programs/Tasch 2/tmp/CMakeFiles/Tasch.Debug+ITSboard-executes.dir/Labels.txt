@@ -1,0 +1,12 @@
+# Target labels
+ Tasch.Debug+ITSboard
+# Source files and their labels
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/CMakeFiles/Tasch.Debug+ITSboard-executes
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/CMakeFiles/Tasch.Debug+ITSboard-executes.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-executes.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-build.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-patch.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-update.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-download.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-mkdir.rule

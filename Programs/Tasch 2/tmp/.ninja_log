@@ -1,0 +1,28 @@
+# ninja log v6
+71	1151	1763071278871324183	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure	c0a9a45a027bc0ca
+55	71	1763071277791904161	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-patch	7801c50292c61ac7
+38	55	1763071277775500065	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-update	ea874bd4a49edc5a
+0	165	1763071454687420350	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-database	8a3f3a52aec33da0
+0	165	1763071454687420350	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-database	8a3f3a52aec33da0
+38	55	1763071277775500065	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-update	ea874bd4a49edc5a
+71	1151	1763071278871324183	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-configure	c0a9a45a027bc0ca
+55	71	1763071277791904161	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-patch	7801c50292c61ac7
+20	38	1763071277758157182	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-download	81f700621cd2e038
+20	38	1763071277758157182	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-download	81f700621cd2e038
+0	20	1763071277740275800	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-mkdir	2c4b49376c1b3fb5
+0	20	1763071277740275800	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-mkdir	2c4b49376c1b3fb5
+0	137	1763071456526798311	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-build	9393ee34fe875315
+0	137	1763071456526798311	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/out/Tasch/ITSboard/Debug/Tasch.axf	9393ee34fe875315
+0	137	1763071456526798311	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-build	9393ee34fe875315
+137	162	1763071456687555619	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-executes	91191c2943402898
+137	162	1763071456687555619	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-executes	91191c2943402898
+137	183	1763071456662978142	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-database	8a3f3a52aec33da0
+137	183	1763071456662978142	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-database	8a3f3a52aec33da0
+183	193	1763071456709498358	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-install	dbf7182e08cefc72
+183	193	1763071456709498358	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-install	dbf7182e08cefc72
+193	209	1763071456735097373	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-test	2f7e97f42629839
+193	209	1763071456735097373	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-test	2f7e97f42629839
+209	231	1763071456756832905	CMakeFiles/Tasch.Debug+ITSboard-complete	5ce2bf048df22c32
+209	231	1763071456756832905	Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-done	5ce2bf048df22c32
+209	231	1763071456756832905	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/CMakeFiles/Tasch.Debug+ITSboard-complete	5ce2bf048df22c32
+209	231	1763071456756832905	/Users/esmatrabaki/ITS-BRD-VSC/Programs/Tasch 2/tmp/Tasch.Debug+ITSboard/src/Tasch.Debug+ITSboard-stamp/Tasch.Debug+ITSboard-done	5ce2bf048df22c32

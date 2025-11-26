@@ -8,6 +8,7 @@
             "cwd": "${workspaceFolder}/Programs/DrehgeberPolling",
             "program": "out/DrehgeberPolling/ITSboard/Debug/DrehgeberPolling.axf",
             "gdb": "arm-none-eabi-gdb",
+            "auxiliaryGdb": true,
             "preLaunchTask": "CMSIS Load",
             "initCommands": [
                 "monitor reset halt",
@@ -15,6 +16,8 @@
             ],
             "customResetCommands": [
                 "monitor reset halt",
+                "maintenance flush register-cache",
+                "maintenance flush dcache",
                 "tbreak main",
                 "continue"
             ],
@@ -46,11 +49,14 @@
             "cwd": "${workspaceFolder}/Programs/DrehgeberPolling",
             "program": "out/DrehgeberPolling/ITSboard/Debug/DrehgeberPolling.axf",
             "gdb": "arm-none-eabi-gdb",
+            "auxiliaryGdb": true,
             "initCommands": [
                 ""
             ],
             "customResetCommands": [
                 "monitor reset halt",
+                "maintenance flush register-cache",
+                "maintenance flush dcache",
                 "tbreak main",
                 "continue"
             ],

@@ -11,24 +11,10 @@
  
 #include "stack.h"
 #include "display.h"
+#include <errorhandler.h>
 
 
 #define SIZE 10
-
-//Fehlercodes
-#define OK 0
-#define STACKOVERFLOW -1
-#define STACKUNDERFLOW -2
-//PRT
-#define PRTSTACKEMPTY -12
-//PRT_ALL
-#define PRTALLSTACKEMPTY -13
-// clear stack
-#define CLEARSTACKEMPTY -14
-//DUPLICATE
-#define DUPUNDERFLOW -15    
-//SWAP
-#define SWAPUNDERFLOW -16
 
 
 // Stack-Datenstruktur
@@ -39,7 +25,7 @@ static int top = -1;
 /**
  * @brief Prüft, ob der Stack voll ist.
  * 
- * @return int 1, wenn der Stack voll ist, sonst 0.
+ * @return int -1, wenn der Stack voll ist, sonst 0.
  */
 int isFull(void) 
 { 
@@ -81,7 +67,7 @@ int pop(int *data)
 {
     if (isEmpty()) 
     {
-        return -1; 
+        return STACKUNDERFLOW; 
     }
     *data = stack[top--]; 
     return OK;
@@ -99,7 +85,7 @@ int peek(int *data)
     if (isEmpty()) {
         return PRTSTACKEMPTY;
     }
-     *data = stack[top]; 
+    *data = stack[top]; 
     return OK;
 }
 
@@ -132,6 +118,7 @@ int clear_stack(void)
     }
     top = -1;
     clearStdout();
+    return OK;
 }
 
 /**

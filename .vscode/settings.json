@@ -119,5 +119,7 @@
   "clangd.arguments": [
     "--compile-commands-dir=/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling/out/DrehgeberPolling/ITSboard/Debug"
   ],
-  "debug.hideSlowPreLaunchWarning": true
+  "debug.hideSlowPreLaunchWarning": true,
+  "debug.showInStatusBar": "never",
+  "cmsis-csolution.autoDebugLaunch": true
 }

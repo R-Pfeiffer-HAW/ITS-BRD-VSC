@@ -13,26 +13,7 @@
 #include "display.h"
 #include <limits.h>
 #include "umwandeln.h"
-
-
-//Fehlercodes
-#define OK 0
-//PLUS
-#define PLUSUNDERFLOW -3
-#define PLUSARITHOVERFLOW -4
-//MINUS
-#define MINUSUNDERFLOW -5
-#define MINUSARITHOVERFLOW -6
-//MULT
-#define MULTUNDERFLOW -7
-#define MULTARITHOVERFLOW -8
-//DIV
-#define DIVUNDERFLOW -9
-#define DIVARITHOVERFLOW -10
-#define DIVBYZERO -11
-//sonstige
-#define UNKNOWNOPERATOR -17
-
+#include "errorhandler.h"
 
 
 /**
@@ -57,11 +38,12 @@ int rechnen(T_token token){
             return OK;
 
         case PLUS:
-            if (pop(&a) != OK || pop(&b) != OK) 
+            error = pop(&a); 
+            error = pop(&b);
+            if (error != OK) 
             {
-                return PLUSUNDERFLOW;
+                return error;
             }
-
             // Overflow-Check für Addition
             if ((a > 0 && b > INT_MAX - a) || (a < 0 && b < INT_MIN - a)) 
             {
@@ -72,9 +54,11 @@ int rechnen(T_token token){
             return OK;
 
         case MINUS:
-            if (pop(&a) != OK || pop(&b) != OK)
+            error = pop(&a); 
+            error = pop(&b);
+            if (error != OK) 
             {
-                return MINUSUNDERFLOW;
+                return error;
             }
             // Overflow-Check für Subtraktion
             if ((a < 0 && b > INT_MAX + a) || (a > 0 && b < INT_MIN + a)) 
@@ -86,9 +70,11 @@ int rechnen(T_token token){
             return OK;
 
         case MULT:
-            if (pop(&a) != OK || pop(&b) != OK) 
+            error = pop(&a); 
+            error = pop(&b);
+            if (error != OK) 
             {
-                return MULTUNDERFLOW;
+                return error;
             }
             if (a == 0 || b == 0)     
             {
@@ -105,14 +91,16 @@ int rechnen(T_token token){
             return OK;
 
         case DIV:
-            if (pop(&a) != OK || pop(&b) != OK) 
+            error = pop(&a); 
+            error = pop(&b);
+            if (error != OK) 
             {
-                return DIVUNDERFLOW;
+                return error;
             }
             if (a == INT_MIN && b == -1) 
             {
               return DIVARITHOVERFLOW;
-}
+            }
             if (a == 0) 
             {
                 return DIVBYZERO;

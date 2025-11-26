@@ -1,0 +1,11 @@
+# Target labels
+ Led.Debug+ITSboard
+# Source files and their labels
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/CMakeFiles/Led.Debug+ITSboard-build
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/CMakeFiles/Led.Debug+ITSboard-build.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-build.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-configure.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-patch.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-update.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-download.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-mkdir.rule

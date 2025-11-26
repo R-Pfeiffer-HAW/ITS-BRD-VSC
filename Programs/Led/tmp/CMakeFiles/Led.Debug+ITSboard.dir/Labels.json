@@ -1,0 +1,52 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/CMakeFiles/Led.Debug+ITSboard"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/CMakeFiles/Led.Debug+ITSboard.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/CMakeFiles/Led.Debug+ITSboard-complete.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-build.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-database.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-executes.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-install.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-mkdir.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-test.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/Led/tmp/Led.Debug+ITSboard/src/Led.Debug+ITSboard-stamp/Led.Debug+ITSboard-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Led.Debug+ITSboard"
+		],
+		"name" : "Led.Debug+ITSboard"
+	}
+}

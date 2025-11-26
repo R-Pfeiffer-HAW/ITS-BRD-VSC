@@ -56,5 +56,5 @@ int gibSchrittzahl(void);
 */
 bool gibFehler(void);
 
-
+int gibPhase();
 #endif 

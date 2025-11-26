@@ -55,7 +55,6 @@ bool lesePinB(void)
     }
 }
 
-
 /**
 * @brief Bestimmt die aktuelle Phase anhand der Eingangssignale.
 * @param A Zustand von Pin A
@@ -157,6 +156,10 @@ void eingabeVerarbeitung(void)
 * @brief Gibt die aktuelle Schrittzahl zurück.
 * @return Die aktuelle Schrittzahl
 */  
+int gibPhase(){
+
+    return aktuellePhase;
+}
 int gibSchrittzahl(void)
 {
     return schrittZaehler;

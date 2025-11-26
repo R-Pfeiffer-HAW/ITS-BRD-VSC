@@ -24,8 +24,7 @@ int main(void) {
 	TP_Init(false);                 // Initialisierung des LCD Boards mit Touch
 
   // Begruessungstext	
-	lcdPrintlnS("Hallo liebes jjTI-Labor (c-project)");
-	
+lcdPrintS("ich hasse dich");	
 	// Test in Endlosschleife
 	while(1) {
 		HAL_Delay(10000);
