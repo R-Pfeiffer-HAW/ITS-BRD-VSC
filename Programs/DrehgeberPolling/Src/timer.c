@@ -8,6 +8,7 @@
 	*           Adapted to discovery board
   ******************************************************************************
   */
+#include "stm32f4xx_hal.h"
 #include "timer.h"
 
 void initTimer(void){

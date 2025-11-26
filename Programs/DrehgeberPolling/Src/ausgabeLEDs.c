@@ -9,7 +9,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include "stm32f4xx_hal.h"
-#include "error.h"
+#include "errorHandler.h"
 
 
 #define BSRR_MASK_PIN_23 (0x01U << 7)

@@ -186,9 +186,11 @@ project:
       files:
         - file: Src/main.c
         - file: Src/eingabe.c
-        - file: src/rechnen.c
-        - file: src/ausgabeLEDs.c
-        - file : src/error.c
+        - file: Src/rechnen.c
+        - file: Src/ausgabeLEDs.c
+        - file: Src/error.c
+        - file: Src/umwandlungInArray.c
+
 
  
 

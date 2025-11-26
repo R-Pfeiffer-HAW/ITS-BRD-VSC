@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "/Users/esmatrabaki/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake;--build;/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/1;--target;database")
+set(command "/Users/raphaelpfeiffer/.vcpkg/artifacts/2139c4c6/tools.kitware.cmake/3.28.4/bin/cmake;--build;/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/1;--target;database")
 set(log_merged "")
 set(log_output_on_failure "ON")
-set(stdout_log "/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database-out.log")
-set(stderr_log "/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database-err.log")
+set(stdout_log "/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database-out.log")
+set(stderr_log "/Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database-err.log")
 execute_process(
   COMMAND ${command}
   RESULT_VARIABLE result
@@ -31,7 +31,7 @@ if(result)
   if (${log_merged})
     set(msg "${msg}\nSee also\n  ${stderr_log}")
   else()
-    set(msg "${msg}\nSee also\n  /Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database-*.log")
+    set(msg "${msg}\nSee also\n  /Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database-*.log")
   endif()
   if (${log_output_on_failure})
     message(SEND_ERROR "${msg}")
@@ -50,7 +50,7 @@ if(result)
   endif()
 else()
   if(NOT "Ninja" MATCHES "Ninja")
-    set(msg "DrehgeberPolling.Debug+ITSboard database command succeeded.  See also /Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database-*.log")
+    set(msg "DrehgeberPolling.Debug+ITSboard database command succeeded.  See also /Users/raphaelpfeiffer/Documents/TI-Labor/gitProjekte/ITSBoard/ITS-BRD-VSC/Programs/DrehgeberPolling/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database-*.log")
     message(STATUS "${msg}")
   endif()
 endif()

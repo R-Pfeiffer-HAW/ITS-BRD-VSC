@@ -11,10 +11,6 @@ build-idx:
       project: DrehgeberPolling
       configuration: .Debug+ITSboard
       messages:
-        warnings:
-          - DrehgeberPolling.cproject.yml:189:17 - 'src/rechnen.c' has case inconsistency, use 'Src/rechnen.c' instead
-          - DrehgeberPolling.cproject.yml:190:17 - 'src/ausgabeLEDs.c' has case inconsistency, use 'Src/ausgabeLEDs.c' instead
-          - DrehgeberPolling.cproject.yml:191:18 - 'src/error.c' has case inconsistency, use 'Src/error.c' instead
         info:
           - DrehgeberPolling.cbuild-pack.yml - file is already up-to-date
           - DrehgeberPolling+ITSboard.cbuild-run.yml - file is already up-to-date
