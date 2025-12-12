@@ -1,0 +1,104 @@
+# ninja log v6
+1	17	1764834910176574478	CMakeFiles/database	149d7a0510e33994
+1	17	1764834910176574478	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+1	173	1764834911218662641	CMakeFiles/Group_Drivers_Board.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/startup/system_stm32f4xx.o	984f8252bd41d504
+1	174	1764834911218760598	CMakeFiles/Group_Drivers_Board.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/startup/stm32f4xx_it.o	9bef53b3a8f1ba8e
+2	175	1764834911220076631	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o	133666cff1e5ccac
+1	179	1764834911219029763	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o	4c518187a14bb6a4
+2	180	1764834911219857799	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o	b2ec62e75f1b027f
+1	181	1764834911218375059	CMakeFiles/Group_Drivers_BSP_STM32F4xx_Nucleo_144.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/BSP/STM32F4xx_Nucleo_144/stm32f4xx_nucleo_144.o	9b3df4f5475e0347
+1	187	1764834911218857431	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o	71b747e967c2192d
+2	188	1764834911219417010	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o	e6b781703d088792
+2	204	1764834911220191671	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o	1173e20e8c89d382
+179	247	1764834911397170454	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Utilities/Fonts/font8.o	d13e5a969b6277c6
+180	248	1764834911397861824	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Utilities/Fonts/font12.o	75f09aa59d9a1e6f
+187	259	1764834911404926026	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Utilities/Fonts/font20.o	b39365f44147f8fa
+181	271	1764834911398730360	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Utilities/Fonts/font16.o	59a040bb694319d1
+3	274	1764834911220531461	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o	f3788bba0a3adc78
+188	275	1764834911406064309	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Utilities/Fonts/font24.o	61c941aae63f6eb4
+204	300	1764834911422096574	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/Consolas40.o	329fb4c52d427c9f
+3	315	1764834911220355421	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o	d4dc653d96bf1885
+174	356	1764834911391865157	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o	bce3fce49b620117
+271	357	1764834911489236779	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/ConsolasBold40.o	be32986154d81e1c
+175	363	1764834911392972358	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.o	f6d2116801b7dd19
+247	368	1764834911464421241	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/Consolas60.o	614307f2be3b4cae
+174	383	1764834911391338911	CMakeFiles/Group_Drivers_STM32F4xx_HAL_Driver.dir/Users/esmatrabaki/ITS-BRD-VSC/stm32cubef4/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o	25b37f452c5721b8
+274	393	1764834911491889260	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/ConsolasBold60.o	659e9551179b2c17
+248	393	1764834911465517483	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/Consolas80.o	eb43bb37e393fbde
+315	409	1764834911533101727	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/CourierNew48.o	f67e062507b89525
+1	430	1764834911218556391	CMakeFiles/Group_Drivers_Board.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/startup/startup_stm32f429xx.o	9f35d96291b93832
+275	438	1764834911492384965	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/ConsolasBold80.o	cdead90a2618d5e6
+363	449	1764834911580653983	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/FiraMono40.o	86ef507f6c9ed02c
+356	450	1764834911573687739	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/CourierNewBold40.o	4dab1ffd4e7201f1
+357	470	1764834911574879439	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/CourierNewBold60.o	35a3ffaa877a3c15
+259	479	1764834911476703073	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/Consolas90.o	b7b171c5d7617f1c
+394	481	1764834911611372647	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/FiraMonoMedium40.o	ec9d82419d8f9be5
+368	497	1764834911586148403	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/FiraMono60.o	c98f1e0ac2a0d93f
+449	506	1764834911666611225	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/fontsFLASH.o	d541bd5a584db8e4
+409	509	1764834911626477876	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/FiraMonoMedium60.o	4f366df33a3f426a
+300	528	1764834911517736833	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/ConsolasBold90.o	e0bbea5e5401dbb5
+470	570	1764834911687695288	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_GUI.o	d14c354a237f8c6d
+383	585	1764834911600815011	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/FiraMono80.o	8a43db47c373c27e
+506	592	1764834911724242578	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_TIM.o	42b490f304c3ca83
+497	594	1764834911714443604	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_GPIO.o	b417ed9e7d13a80f
+430	598	1764834911648210435	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/FiraMonoMedium80.o	f53ab3221bd51d73
+450	599	1764834911668213047	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_Driver.o	7826176f174bd13b
+481	600	1764834911698972044	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_SPI.o	131c1155bfad820c
+393	607	1764834911610439653	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/FiraMono90.o	d17dcca39301f44a
+438	625	1764834911655765258	CMakeFiles/Group_Utils.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Utilities/AddFonts/FiraMonoMedium90.o	92fb6e122b53610f
+479	631	1764834911696550560	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_Touch.o	37abfae6c72d93d4
+570	647	1764834911788181930	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_Debug.o	37cd75ac1a6544e1
+599	679	1764834911817087939	CMakeFiles/Group_ITS_BRD_LIB.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/terminal.o	8705c1c8292a445a
+594	684	1764834911812154598	CMakeFiles/Group_ITS_BRD_LIB.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/lcd.o	a727551717b0b6e2
+585	685	1764834911803110202	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_Demos.o	914280ffbbd9e3cd
+600	695	1764834911817329938	CMakeFiles/Group_ITS_BRD_LIB.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/keypad.o	f6c27af1b1964f9a
+509	707	1764834911726654062	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/LCD_Tools.o	38e4daf36effc1b7
+528	711	1764834911746194011	CMakeFiles/Group_LCD.dir/Users/esmatrabaki/ITS-BRD-VSC/DisplayWaveshare/Src/testsoftware.o	787651328b558f1e
+647	727	1764834911865308399	CMakeFiles/Group_ITS_BRD_LIB.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/stdinout_USART.o	a9b6aa0d6e0761ba
+598	746	1764834911816109488	CMakeFiles/Group_ITS_BRD_LIB.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/init.o	7dc28a7420e17837
+685	750	1764834911902983057	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/rechnen.o	1458bb03a29471ce
+625	757	1764834911842662888	CMakeFiles/Group_ITS_BRD_LIB.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/timer.o	718971fbfa161174
+592	758	1764834911809690615	CMakeFiles/Group_ITS_BRD_LIB.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/error.o	bbd930fc21433a9c
+707	772	1764834911924970905	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/error1.o	25bea35f8d157767
+607	775	1764834911825206800	CMakeFiles/Group_ITS_BRD_LIB.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/delay.o	cf5cca921520ea95
+711	778	1764834911928688296	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/display_update.o	a124ced38cc03e8d
+684	786	1764834911901382401	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/eingabe.o	7c92d7aec2db215a
+679	792	1764834911896888640	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/main.o	e5cae42ff780b9b6
+631	804	1764834911849015970	CMakeFiles/Group_ITS_BRD_LIB.dir/Users/esmatrabaki/ITS-BRD-VSC/ITS_BRD_LIB/Src/USART_STM32F4xx.o	e5ad7b4c69566688
+3	341	1764835115625205130	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/error1.o	25bea35f8d157767
+3	342	1764835115625020256	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/eingabe.o	7c92d7aec2db215a
+2	342	1764835115624862132	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/main.o	e5cae42ff780b9b6
+3	396	1764835413292234713	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/error1.o	25bea35f8d157767
+3	397	1764835413292041798	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/eingabe.o	7c92d7aec2db215a
+3	397	1764835413292141130	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/ausgabeLEDs.o	d39dc5e298d3a3c4
+3	399	1764835413291868216	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/main.o	e5cae42ff780b9b6
+399	509	1764835413688013698	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/out/DrehgeberPolling/ITSboard/Debug/DrehgeberPolling.axf	fc84a800ddd45264
+1	20	1764835413824649800	CMakeFiles/database	149d7a0510e33994
+1	20	1764835413824649800	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+2	330	1764835645099077407	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/ausgabeLEDs.o	d39dc5e298d3a3c4
+331	435	1764835645427286648	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/out/DrehgeberPolling/ITSboard/Debug/DrehgeberPolling.axf	fc84a800ddd45264
+1	19	1764835645551053255	CMakeFiles/database	149d7a0510e33994
+1	19	1764835645551053255	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+2	18	1764840092910736788	CMakeFiles/database	149d7a0510e33994
+2	18	1764840092910736788	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+1	16	1764840094662098738	CMakeFiles/database	149d7a0510e33994
+1	16	1764840094662098738	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+1	518	1764840096586476616	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/display_update.o	a124ced38cc03e8d
+1	519	1764840096586305622	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/main.o	e5cae42ff780b9b6
+519	638	1764840097103815160	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/out/DrehgeberPolling/ITSboard/Debug/DrehgeberPolling.axf	fc84a800ddd45264
+0	18	1764840097244577503	CMakeFiles/database	149d7a0510e33994
+0	18	1764840097244577503	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+3	436	1764841612613485344	CMakeFiles/Group_Program_User_Src.dir/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling_2/Src/display_update.o	a124ced38cc03e8d
+437	557	1764841613047147561	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/out/DrehgeberPolling/ITSboard/Debug/DrehgeberPolling.axf	fc84a800ddd45264
+1	17	1764841613187446982	CMakeFiles/database	149d7a0510e33994
+1	17	1764841613187446982	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+0	15	1764841636469662128	CMakeFiles/database	149d7a0510e33994
+0	15	1764841636469662128	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+0	15	1764841637417686945	CMakeFiles/database	149d7a0510e33994
+0	15	1764841637417686945	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+1	17	1764841648041227210	CMakeFiles/database	149d7a0510e33994
+1	17	1764841648041227210	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+31	275	1764974127954802899	CMakeFiles/database	149d7a0510e33994
+31	275	1764974127954802899	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994
+5	30	1765375576161590629	CMakeFiles/database	149d7a0510e33994
+5	30	1765375576161590629	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/1/CMakeFiles/database	149d7a0510e33994

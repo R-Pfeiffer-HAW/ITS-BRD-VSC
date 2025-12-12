@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/CMakeFiles/DrehgeberPolling.Debug+ITSboard-configure"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/CMakeFiles/DrehgeberPolling.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-configure.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-patch.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-update.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-download.rule"
+		},
+		{
+			"file" : "/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"DrehgeberPolling.Debug+ITSboard"
+		],
+		"name" : "DrehgeberPolling.Debug+ITSboard-configure"
+	}
+}

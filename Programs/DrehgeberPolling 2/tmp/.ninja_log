@@ -1,0 +1,28 @@
+# ninja log v6
+0	560	1764974127659513578	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database	5eaabd41334f33a
+18	36	1764834909506231174	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-download	a9141b33f8cc64b8
+0	20	1764841648002613402	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-build	14fee4de7a7066dd
+36	53	1764834909523568680	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-update	271cc78c655e940
+0	560	1764974127659513578	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database	5eaabd41334f33a
+0	20	1764841648002613402	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-build	14fee4de7a7066dd
+36	53	1764834909523568680	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-update	271cc78c655e940
+71	687	1764834910157174236	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-configure	d28467e39c0c85e2
+81	102	1764841648104084000	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-done	afbd94430c2a1f91
+529	551	1764835413821766986	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-executes	919d7b8a980de10
+1	18	1764834909488375047	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-mkdir	dac1ba4099de37f4
+53	71	1764834909541061268	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-patch	93bf0f379fdae6b3
+1	18	1764834909488375047	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-mkdir	dac1ba4099de37f4
+18	36	1764834909506231174	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-download	a9141b33f8cc64b8
+66	81	1764841648082495000	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-test	14fbcb2bccd5c33
+57	66	1764841648058845429	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-install	d7a3207b5e7d481c
+0	20	1764841648002613402	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/out/DrehgeberPolling/ITSboard/Debug/DrehgeberPolling.axf	14fee4de7a7066dd
+57	66	1764841648058845429	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-install	d7a3207b5e7d481c
+71	687	1764834910157174236	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-configure	d28467e39c0c85e2
+81	102	1764841648104084000	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/CMakeFiles/DrehgeberPolling.Debug+ITSboard-complete	afbd94430c2a1f91
+66	81	1764841648082495000	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-test	14fbcb2bccd5c33
+53	71	1764834909541061268	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-patch	93bf0f379fdae6b3
+529	551	1764835413821766986	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-executes	919d7b8a980de10
+81	102	1764841648104084000	CMakeFiles/DrehgeberPolling.Debug+ITSboard-complete	afbd94430c2a1f91
+81	102	1764841648104084000	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-done	afbd94430c2a1f91
+0	59	1765375576128544370	DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database	5eaabd41334f33a
+0	59	1765375576128544370	/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling 2/tmp/DrehgeberPolling.Debug+ITSboard/src/DrehgeberPolling.Debug+ITSboard-stamp/DrehgeberPolling.Debug+ITSboard-database	5eaabd41334f33a
