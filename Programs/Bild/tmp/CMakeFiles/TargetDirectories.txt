@@ -1,0 +1,8 @@
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/database.dir
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/Bild.Debug+ITSboard.dir
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/Bild.Debug+ITSboard-build.dir
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/Bild.Debug+ITSboard-configure.dir
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/Bild.Debug+ITSboard-executes.dir
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/Bild.Debug+ITSboard-database.dir
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/edit_cache.dir
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/rebuild_cache.dir

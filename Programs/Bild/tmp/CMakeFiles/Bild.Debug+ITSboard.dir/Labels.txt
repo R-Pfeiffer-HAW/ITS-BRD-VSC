@@ -1,0 +1,16 @@
+# Target labels
+ Bild.Debug+ITSboard
+# Source files and their labels
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/Bild.Debug+ITSboard
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/Bild.Debug+ITSboard.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/CMakeFiles/Bild.Debug+ITSboard-complete.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-build.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-configure.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-database.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-download.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-executes.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-install.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-mkdir.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-patch.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-test.rule
+/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/tmp/Bild.Debug+ITSboard/src/Bild.Debug+ITSboard-stamp/Bild.Debug+ITSboard-update.rule
