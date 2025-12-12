@@ -117,7 +117,7 @@
   "cmake.ignoreCMakeListsMissing": true,
   "C_Cpp_Runner.msvcBatchPath": "",
   "clangd.arguments": [
-    "--compile-commands-dir=/Users/esmatrabaki/ITS-BRD-VSC/Programs/DrehgeberPolling/out/DrehgeberPolling/ITSboard/Debug"
+    "--compile-commands-dir=/Users/esmatrabaki/ITS-BRD-VSC/Programs/Bild/out/Bild/ITSboard/Debug"
   ],
   "debug.hideSlowPreLaunchWarning": true,
   "debug.showInStatusBar": "never",
