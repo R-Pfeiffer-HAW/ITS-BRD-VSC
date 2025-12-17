@@ -16,6 +16,7 @@
 #include "additionalFonts.h"
 #include "error.h"
 #include "input.h"
+#include "readInput.h"
 
 
 int main(void) {
@@ -32,7 +33,7 @@ int main(void) {
 	initInput();
 	// Test in Endlosschleife
 	while(1) {
-		
+		readinput();
 		HAL_Delay(10000);
 	}
 	
